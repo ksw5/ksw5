@@ -32,9 +32,12 @@ My name is Kieran! I am a flight attendant, dog mom, and future Android Develope
 
   
 ## &#x1f4c8; Stats
+  
+ <p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=ksw5&show_icons=true&theme=radical" alt="ksw5" />
+   
 [![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=ksw5)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=ksw5&show_icons=true&theme=radical" alt="ksw5" />
+
   
 
 
