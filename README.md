@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="700" height="219" src="banner.png">
+  <img width="1000" height="219" src="banner2.png">
 </p>
 
 <a href="https://www.linkedin.com/in/kieran-windley/"> ![alt text](https://img.shields.io/badge/-LinkedIn-0e76a8?style=plastic&logo=linkedIn)</a> ![](https://visitor-badge.glitch.me/badge?page_id=ksw5.ksw5)
