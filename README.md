@@ -25,8 +25,14 @@ My name is Kieran! I'm currently in a fellowship learning Android Development.
 <p align="center"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ksw5&theme=radical" alt="ksw5 languages" />
 
 <br/>
+
+
+
+
   
 ## &#x1f4c8; Stats
+[![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=ksw5)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
 <p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=ksw5&show_icons=true&theme=radical" alt="ksw5" />
   
 
