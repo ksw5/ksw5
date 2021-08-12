@@ -1,4 +1,6 @@
-![alt text](banner.png "banner")
+<p align="center">
+  <img width="700" height="219" src="banner.png">
+</p>
 
 
 <!--
