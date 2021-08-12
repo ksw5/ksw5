@@ -1,6 +1,5 @@
-![alt text](Untitled design (2).png "banner")
-![alt text](Untitled design (2).png "banner")
-<img src"Untitled design (2).png />
+![alt text](banner.png "banner")
+
 
 <!--
 **ksw5/ksw5** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
