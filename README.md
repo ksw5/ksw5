@@ -6,7 +6,7 @@
 
 # Hey, y'all! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
-My name is Kieran! I am a flight attendant, dog mom, and future Android Developer who is passionate about great customer experiences and solving problems. My goal is to become a "defensive programmer".
+My name is Kieran! I am a flight attendant, dog mom, and future Android Developer who is passionate about great customer experiences and solving problems. My goal is to become an Android Developer.
 - 🔭 I’m currently working on a todo list app
 - 🌱 I’m currently learning Kotlin
 <br/>
