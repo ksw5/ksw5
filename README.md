@@ -6,9 +6,9 @@
 
 # Hey, y'all! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
-My name is Kieran! I am a flight attendant, dog mom, and future Android Developer who is passionate about great customer experiences and solving problems. My goal is to become an Android Engineer.
+My name is Kieran! I am a flight attendant, dog mom, and future Android Engineer who is passionate about great user experiences and solving problems. 
 - 🔭 I’m currently working on a hangman game
-- 🌱 I’m currently learning Kotlin and UX/UI design
+- 🌱 I’m currently learning Kotlin, HTML/CSS, Javascript, and UX/UI design
 <br/>
 
 ## 🔧 Technologies & Tools
