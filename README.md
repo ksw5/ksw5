@@ -6,9 +6,9 @@
 
 # Hey, y'all! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
-My name is Kieran! I am a flight attendant, dog mom, and future Android Engineer who is passionate about creating great user experiences and solving problems. 
-- 🔧 I’m currently working on a hangman game
-- 📚 I’m currently learning Kotlin, HTML/CSS, Javascript, and UX/UI design
+My name is Kieran! I am a flight attendant, dog mom, and Android Engineer who is passionate about creating great user experiences and solving problems. 
+- 📚 I’m currently learning Compose
+- 🏀 I'm currently working on a group project [NBA Game Ready app](https://github.com/nba-game-ready/nba-game-ready)
 <br/>
 
 ## 🔧 Technologies & Tools
@@ -40,21 +40,3 @@ My name is Kieran! I am a flight attendant, dog mom, and future Android Engineer
 
   
 
-
-
-
-
-
-<!--
-**ksw5/ksw5** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
