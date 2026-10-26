@@ -24,3 +24,24 @@ for keyword in ("Crabtree Valley Mall", "Southpoint", "Friendly Center", "Lynnha
 text = soup.get_text(" ", strip=True)
 print("VISIBLE_TEXT_HEAD", text[:500])
 print("JS_DATA_CONTAINERS", [x.get("id") for x in soup.select("script[id], [data-store-id], [data-availability]")[:15]])
+
+from collections import Counter
+classes = Counter()
+positives = []
+for tr in soup.select("tr[data-store]"):
+    for cell in tr.select("td[data-color][data-storage]"):
+        span = cell.select_one("span[title]")
+        if not span:
+            continue
+        classes[" ".join(span.get("class", []))] += 1
+        title = span.get("title", "")
+        state = title.rsplit(":", 1)[-1].strip().lower()
+        if state in ("available", "pickup available") or "sq-available" in span.get("class", []):
+            a = tr.select_one("th a")
+            positives.append({"store": a.get_text(" ", strip=True) if a else "?",
+                              "url": a.get("href", "") if a else "",
+                              "color": cell.get("data-color"), "storage": cell.get("data-storage"),
+                              "state": state, "title": title,
+                              "classes": span.get("class", [])})
+print("STATUS_CLASSES", dict(classes))
+print("ALL_POSITIVES", json.dumps(positives))
