@@ -1,6 +1,11 @@
 name: iPhone Duo stock check
 on:
   pull_request:
+  push:
+    branches: [main]
+    paths:
+      - '.github/iphone-duo/**'
+      - '.github/workflows/iphone-duo-stock.yml'
   schedule:
     - cron: '7,27,47 * * * *'
   workflow_dispatch:
