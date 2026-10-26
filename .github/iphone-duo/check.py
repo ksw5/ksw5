@@ -17,15 +17,15 @@ NEARBY_STORES = (
     "Friendly Center", "Lynnhaven Mall", "MacArthur Center",
     "Short Pump Town Center", "Mayfaire",
 )
-PRODUCT_PATTERN = re.compile(r"iPhone\\s*(?:Duo|17)", re.I)
-AVAILABLE = re.compile(r"(?<!not )(?<!un)available\\s*(?:for pickup|today|now)?|in stock|pickup available", re.I)
+PRODUCT_PATTERN = re.compile(r"iPhone\s*(?:Duo|17)", re.I)
+AVAILABLE = re.compile(r"(?<!not )(?<!un)available\s*(?:for pickup|today|now)?|in stock|pickup available", re.I)
 UNAVAILABLE = re.compile(r"unavailable|out of stock|sold out|no availability|not available", re.I)
 
 def extract(html):
     soup = BeautifulSoup(html, "html.parser")
     for tag in soup(["script", "style", "noscript", "header", "footer"]):
         tag.decompose()
-    lines = [re.sub(r"\\s+", " ", s).strip() for s in soup.stripped_strings]
+    lines = [re.sub(r"\s+", " ", s).strip() for s in soup.stripped_strings]
     # Fail closed: a listing must explicitly join a specific store with product and availability.
     matches = []
     for store in NEARBY_STORES:
@@ -65,7 +65,7 @@ def main():
         # Do not close on uncertain absence; could be client-rendered or temporarily unreachable.
         return
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    body = f"Potential pickup stock detected at {now} by [Duo Checker]({URL}). VERIFY on Apple's official website before traveling.\\n\\n" + "\\n".join(
+    body = f"Potential pickup stock detected at {now} by [Duo Checker]({URL}). VERIFY on Apple's official website before traveling.\n\n" + "\n".join(
         f"- **{store}** — {context}" for store, context in matches)
     if tracked:
         print(f"Existing open issue #{tracked['number']}; no duplicate alert.")
