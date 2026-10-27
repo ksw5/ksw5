@@ -42,9 +42,14 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/apple-stock.json
-          if ! git diff --cached --quiet; then
+          cp data/apple-stock.json "$RUNNER_TEMP/apple-stock.json"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp "$RUNNER_TEMP/apple-stock.json" data/apple-stock.json
+            git add data/apple-stock.json
+            if git diff --cached --quiet; then exit 0; fi
             git commit -m "Update Apple stock snapshot"
-            git pull --rebase origin main
-            git push
-          fi
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1
