@@ -1,0 +1,47 @@
+name: iPhone 18 Pro Max pickup test
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/tmobile-duo/pickup.py'
+      - '.github/tmobile-duo/pro_max_test.py'
+      - '.github/workflows/tmobile-pro-max-test.yml'
+permissions:
+  contents: write
+concurrency:
+  group: pro-max-pickup-test
+  cancel-in-progress: false
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser
+        timeout-minutes: 3
+        run: |
+          python -m pip install playwright==1.58.0
+          python -m playwright install chromium --only-shell
+      - name: Test pickup classification
+        run: python -m unittest discover -s .github/tmobile-duo -p 'test_pickup.py' -v
+      - name: Search both areas with iPhone 18 Pro Max
+        run: python .github/tmobile-duo/pro_max_test.py
+      - name: Publish test result
+        run: |
+          cp data/tmobile-pro-max-test.json /tmp/pro-max-result.json
+          git restore data/tmobile-pro-max-test.json 2>/dev/null || true
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/pro-max-result.json data/tmobile-pro-max-test.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/tmobile-pro-max-test.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish iPhone 18 Pro Max control test"
+            git pull --rebase origin main
+            git push
+          fi
