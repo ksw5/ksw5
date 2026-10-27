@@ -12,7 +12,7 @@ NO_PICKUP = "The chosen item isn't available for pickup at stores within 20 mile
 def classify(text, options):
     if NO_PICKUP in text:
         return 'unavailable', []
-    good = [o['text'] for o in options if o['enabled'] and re.search(r'\b(?:available for pickup|ready for pickup|pick up today|pickup today)\b',o['text'],re.I) and not re.search(r'\b(?:not available|unavailable|out of stock)\b',o['text'],re.I)]
+    good = [o['text'] for o in options if o['enabled'] and re.search(r'\b(?:available for pickup|ready for pickup|pick up today|pickup today|in stock|hurry, only a few left)\b',o['text'],re.I) and not re.search(r'\b(?:not available|unavailable|out of stock)\b',o['text'],re.I)]
     return ('available', good) if good else ('unknown', [])
 
 def now(): return datetime.now(timezone.utc).isoformat()
@@ -30,13 +30,14 @@ def read_search(page, zipcode):
     dialog.evaluate("e => {window.__pickupChanges=0; window.__pickupObserver?.disconnect(); window.__pickupObserver=new MutationObserver(m=>{if(m.some(x=>x.type==='childList'||x.type==='characterData'))window.__pickupChanges++}); window.__pickupObserver.observe(e,{subtree:true,childList:true,characterData:true});}")
     box.press('Enter')
     page.wait_for_function('window.__pickupChanges > 0',timeout=20000)
+    page.wait_for_function("() => {const d=document.querySelector('[role=dialog][aria-label=\"Select a store for pickup\"]'); return d && (d.innerText.includes(\"The chosen item isn't available for pickup at stores within 20 miles\") || [...d.querySelectorAll('input[type=radio]')].some(e=>e.labels?.[0]?.innerText.includes('In Stock')||e.labels?.[0]?.innerText.includes('Hurry, only a few left')))}",timeout=30000)
     settle(page)
     text=dialog.inner_text()
     page.wait_for_timeout(1500)
     if text != dialog.inner_text():
         settle(page); text=dialog.inner_text()
     if box.input_value() != zipcode: raise ValueError('Search location did not remain selected')
-    options=dialog.get_by_role('radio').evaluate_all("els=>els.map(e=>({text:e.getAttribute('aria-label')||e.closest('label')?.innerText||'',enabled:!e.disabled&&e.getAttribute('aria-disabled')!=='true'}))")
+    options=dialog.get_by_role('radio').evaluate_all("els=>els.map(e=>({text:e.getAttribute('aria-label')||e.labels?.[0]?.innerText||'',enabled:!e.disabled&&e.getAttribute('aria-disabled')!=='true'}))")
     state,stores=classify(text,options)
     return state,stores,text[:6000]
 
