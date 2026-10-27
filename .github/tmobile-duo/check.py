@@ -160,7 +160,113 @@ def update_issues(known):
         print(f"NEW T-MOBILE ALERT: {issue['html_url']}")
 
 
-STORE_META = {}
+# Addresses verified from each canonical /stores/bd/ page on 2026-10-27.
+STORE_META = {
+  "t-mobile-charlotte-nc-28262-9342": {
+    "name": "T-Mobile The Shoppes at Univ Place",
+    "address": "8944 Jm Keynes Drive, Charlotte, NC, 28262"
+  },
+  "t-mobile-charlotte-nc-28273-198d": {
+    "name": "T-Mobile S Tryon St & Steele Creek Rd",
+    "address": "12820 S Tryon St, Charlotte, NC, 28273"
+  },
+  "t-mobile-charlotte-nc-28213-2062": {
+    "name": "T-Mobile N Tryon & Lambeth Dr",
+    "address": "5025 N Tryon St, Charlotte, NC, 28213"
+  },
+  "t-mobile-charlotte-nc-28209-145": {
+    "name": "T-Mobile South & Woodlawn",
+    "address": "4651 South Blvd, Charlotte, NC, 28209"
+  },
+  "t-mobile-charlotte-nc-28227-2286": {
+    "name": "T-Mobile Albemarle Rd & Circ. Rd",
+    "address": "9030 Albemarle Rd, Charlotte, NC, 28227"
+  },
+  "t-mobile-charlotte-nc-28216-2rsb": {
+    "name": "T-Mobile Northlake Commons",
+    "address": "9335 Center Lake Dr, Charlotte, NC, 28216"
+  },
+  "t-mobile-charlotte-nc-28226-2911": {
+    "name": "T-Mobile Arboretum",
+    "address": "3351 Pineville-matthews Rd, Charlotte, NC, 28226"
+  },
+  "t-mobile-charlotte-nc-28277-9352": {
+    "name": "T-Mobile Shoppes at Ardrey Kell",
+    "address": "16615 Lancaster Hwy, Charlotte, NC, 28277"
+  },
+  "t-mobile-concord-nc-28027-4382": {
+    "name": "T-Mobile Concord Mills",
+    "address": "8111 Concord Mills Blvd, Concord, NC, 28027"
+  },
+  "t-mobile-concord-nc-28027-4021": {
+    "name": "T-Mobile Concord Mills Blvd & Thunder Rd Nw",
+    "address": "8561 Concord Mills Blvd, Concord, NC, 28027"
+  },
+  "t-mobile-washington-nc-27889-404f": {
+    "name": "T-Mobile Carolina Ave & W 15th St",
+    "address": "1417 Carolina Ave, Washington, NC, 27889"
+  },
+  "t-mobile-greenville-nc-27858-9422": {
+    "name": "T-Mobile Arlington Plaza",
+    "address": "600-C SE Greenville Blvd, Greenville, NC, 27858"
+  },
+  "t-mobile-williamston-nc-27892-1u42": {
+    "name": "T-Mobile Walmart Dr & Washington St",
+    "address": "1067 Walmart Drive, Williamston, NC, 27892"
+  },
+  "t-mobile-new-bern-nc-28562-1u06": {
+    "name": "T-Mobile Martin Luther King Jr Blvd & Lowes Blvd",
+    "address": "3125 Martin Luther King Jr Blvd, New Bern, NC, 28562"
+  },
+  "t-mobile-kinston-nc-28504-2u52": {
+    "name": "T-Mobile Westgate Plaza",
+    "address": "4140 West Vernon Avenue, Kinston, NC, 28504"
+  },
+  "t-mobile-rocky-mount-nc-27804-2smf": {
+    "name": "T-Mobile Cobb Corners Dr & Benvenue Rd",
+    "address": "1243 Cobb Corners Dr, Rocky Mount, NC, 27804"
+  },
+  "t-mobile-goldsboro-nc-27534-9420": {
+    "name": "T-Mobile Ashley Plaza",
+    "address": "225 N Berkeley Blvd, Goldsboro, NC, 27534"
+  },
+  "t-mobile-goldsboro-nc-27530-468g": {
+    "name": "T-Mobile Shoppes at Goldsboro",
+    "address": "2912 US Hwy 70 W, Goldsboro, NC, 27530"
+  },
+  "t-mobile-raleigh-nc-27612-9820": {
+    "name": "T-Mobile Crabtree Valley Mall",
+    "address": "4325 Glenwood Ave, Raleigh, NC, 27612"
+  },
+  "t-mobile-raleigh-nc-27609-9362": {
+    "name": "T-Mobile Creekside Crossing",
+    "address": "424 East Six Forks Road, Raleigh, NC, 27609"
+  },
+  "t-mobile-raleigh-nc-27617-4sfq": {
+    "name": "T-Mobile Brier Creek",
+    "address": "7880 Alexander Promenade Pl, Raleigh, NC, 27617"
+  },
+  "t-mobile-durham-nc-27713-2sme": {
+    "name": "T-Mobile Fayetteville Rd & E NC Hwy 54",
+    "address": "6409 Fayetteville Rd, Durham, NC, 27713"
+  },
+  "t-mobile-greensboro-nc-27408-9408": {
+    "name": "T-Mobile Pinedale Crossing",
+    "address": "2511 Battleground Ave, Greensboro, NC, 27408"
+  },
+  "t-mobile-jacksonville-nc-28546-372g": {
+    "name": "T-Mobile Western & Jacksonville Pkwy",
+    "address": "1631 Western Blvd, Jacksonville, NC, 28546"
+  },
+  "t-mobile-wilmington-nc-28403-2smt": {
+    "name": "T-Mobile Oleander Dr & Peachtree Ave",
+    "address": "4401 Oleander Dr, Wilmington, NC, 28403"
+  },
+  "t-mobile-fayetteville-nc-28314-9356": {
+    "name": "T-Mobile Skibo Rd & Chason Ridge Dr",
+    "address": "2050 Skibo Rd, Fayetteville, NC, 28314"
+  }
+}
 def store_metadata(html):
     soup=BeautifulSoup(html, "html.parser")
     def visit(obj):
@@ -192,7 +298,8 @@ def collect():
         try:
             resp=HTTP.get(url,timeout=18)
             resp.raise_for_status()
-            STORE_META[slug]=store_metadata(resp.text)
+            if resp.url.rstrip('/') == url.rstrip('/'):
+                STORE_META[slug] = store_metadata(resp.text) or STORE_META.get(slug,{})
             state,details=parse(resp.text,resp.url,url)
             if state=="unknown":
                 print(f"UNKNOWN {city} {slug}: {details}")
@@ -205,7 +312,7 @@ def collect():
             known[slug]=(state,details,city,name,url)
         except requests.RequestException as ex:
             print(f"UNKNOWN {city} {slug}: request error {type(ex).__name__}")
-            known[slug]=("unknown",str(ex),city,slug,url)
+            known[slug]=("unknown",str(ex),city,STORE_META.get(slug,{}).get("name") or slug,url)
     return known
 
 def main():
