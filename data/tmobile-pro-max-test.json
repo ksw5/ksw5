@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T01:57:11.257138+00:00",
+  "checked_at": "2026-10-27T01:59:23.914447+00:00",
   "source": "automated_pickup_selector",
   "results": [
     {
@@ -11,10 +11,11 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:56:13.501008+00:00",
+      "checked_at": "2026-10-27T01:57:50.092315+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Burgundy\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-2\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n "
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Burgundy\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-2\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div data-a11y-dialog-hide=\"\" class=\"phx-modal__overlay\" id=\"tnt269975_BotSheetModalOverlay\"></div> from <div>\u2026</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  11 \u00d7 retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div data-a11y-dialog-hide=\"\" class=\"phx-modal__overlay\" id=\"tnt269975_BotSheetModalOverlay\"></div> fr",
+      "product": "iPhone 18 Pro Max"
     },
     {
       "color": "Burgundy",
@@ -25,10 +26,11 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:56:13.501092+00:00",
+      "checked_at": "2026-10-27T01:57:50.092384+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Burgundy\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-2\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n "
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Burgundy\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-2\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div data-a11y-dialog-hide=\"\" class=\"phx-modal__overlay\" id=\"tnt269975_BotSheetModalOverlay\"></div> from <div>\u2026</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  11 \u00d7 retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div data-a11y-dialog-hide=\"\" class=\"phx-modal__overlay\" id=\"tnt269975_BotSheetModalOverlay\"></div> fr",
+      "product": "iPhone 18 Pro Max"
     },
     {
       "color": "Silver",
@@ -39,10 +41,11 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:56:32.831855+00:00",
-      "state": "unknown",
+      "checked_at": "2026-10-27T01:58:04.715939+00:00",
+      "state": "unavailable",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Silver\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-1\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n   "
+      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores.",
+      "product": "iPhone 18 Pro Max"
     },
     {
       "color": "Silver",
@@ -53,10 +56,11 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:56:32.831953+00:00",
-      "state": "unknown",
+      "checked_at": "2026-10-27T01:58:14.136443+00:00",
+      "state": "unavailable",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Silver\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-1\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n   "
+      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores.",
+      "product": "iPhone 18 Pro Max"
     },
     {
       "color": "Glacier",
@@ -67,10 +71,11 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:56:52.065079+00:00",
-      "state": "unknown",
+      "checked_at": "2026-10-27T01:58:36.365550+00:00",
+      "state": "unavailable",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Glacier\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    28 \u00d7 waiting for element to be visible, enabled and stable"
+      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores.",
+      "product": "iPhone 18 Pro Max"
     },
     {
       "color": "Glacier",
@@ -81,10 +86,11 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:56:52.065131+00:00",
-      "state": "unknown",
+      "checked_at": "2026-10-27T01:58:44.802803+00:00",
+      "state": "unavailable",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Glacier\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    28 \u00d7 waiting for element to be visible, enabled and stable"
+      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores.",
+      "product": "iPhone 18 Pro Max"
     },
     {
       "color": "Black",
@@ -95,10 +101,13 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:57:11.160730+00:00",
-      "state": "unknown",
-      "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Black\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-3\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    "
+      "checked_at": "2026-10-27T01:59:07.174308+00:00",
+      "state": "available",
+      "stores": [
+        "Arlington Plaza (18.1 mi)\n\n600-C SE Greenville Blvd, Greenville, NC, 27858\n\nToday's hours: 10am - 8pm\n\nIn Stock"
+      ],
+      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nSearch results available below.\n\nArlington Plaza (18.1 mi)\n\n600-C SE Greenville Blvd, Greenville, NC, 27858\n\nToday's hours: 10am - 8pm\n\nIn Stock\nPick up here",
+      "product": "iPhone 18 Pro Max"
     },
     {
       "color": "Black",
@@ -109,13 +118,17 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:57:11.160782+00:00",
-      "state": "unknown",
-      "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Black\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-3\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    "
+      "checked_at": "2026-10-27T01:59:15.783139+00:00",
+      "state": "available",
+      "stores": [
+        "The Shoppes at Univ Place (7.9 mi)\n\n8944 Jm Keynes Drive Suite 310, Charlotte, NC, 28262\n\nToday's hours: 10am - 8pm\n\nIn Stock"
+      ],
+      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nSearch results available below.\n\nThe Shoppes at Univ Place (7.9 mi)\n\n8944 Jm Keynes Drive Suite 310, Charlotte, NC, 28262\n\nToday's hours: 10am - 8pm\n\nIn Stock\nPick up here",
+      "product": "iPhone 18 Pro Max"
     }
   ],
-  "product": "iPhone 18 Pro Max",
+  "fallback_used": false,
+  "product": "iPhone 18 Pro Max / Pro control test",
   "test_mode": true,
   "scope": "256GB in all four colors; 20 miles around 27889 and 28202",
   "alerts_enabled": false
