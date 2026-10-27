@@ -1,8 +1,108 @@
 {
-  "checked_at": "2026-10-26T21:12:46.521058-04:00",
+  "checked_at": "2026-10-26T21:17:18.843989-04:00",
   "zip": "27889",
   "product": "iPhone Duo",
   "stores": [
+    {
+      "id": "t-mobile-charlotte-nc-28262-9342",
+      "state": "unavailable",
+      "details": "T-Mobile says High demand. Item may sell out quickly. Visit a store for best availability. Shipping options available.",
+      "city": "Charlotte",
+      "name": "t-mobile-charlotte-nc-28262-9342",
+      "url": "https://www.t-mobile.com/stores/pd/t-mobile-charlotte-nc-28262-9342/apple-iphone-duo",
+      "region": "Charlotte area",
+      "pickup_confirmed": false
+    },
+    {
+      "id": "t-mobile-charlotte-nc-28273-198d",
+      "state": "unknown",
+      "details": "Product page redirected; no reliable stock information.",
+      "city": "Charlotte",
+      "name": "t-mobile-charlotte-nc-28273-198d",
+      "url": "https://www.t-mobile.com/stores/pd/t-mobile-charlotte-nc-28273-198d/apple-iphone-duo",
+      "region": "Charlotte area",
+      "pickup_confirmed": false
+    },
+    {
+      "id": "t-mobile-charlotte-nc-28213-2062",
+      "state": "unknown",
+      "details": "Product page redirected; no reliable stock information.",
+      "city": "Charlotte",
+      "name": "t-mobile-charlotte-nc-28213-2062",
+      "url": "https://www.t-mobile.com/stores/pd/t-mobile-charlotte-nc-28213-2062/apple-iphone-duo",
+      "region": "Charlotte area",
+      "pickup_confirmed": false
+    },
+    {
+      "id": "t-mobile-charlotte-nc-28209-145",
+      "state": "unknown",
+      "details": "Product page redirected; no reliable stock information.",
+      "city": "Charlotte",
+      "name": "t-mobile-charlotte-nc-28209-145",
+      "url": "https://www.t-mobile.com/stores/pd/t-mobile-charlotte-nc-28209-145/apple-iphone-duo",
+      "region": "Charlotte area",
+      "pickup_confirmed": false
+    },
+    {
+      "id": "t-mobile-charlotte-nc-28227-2286",
+      "state": "unknown",
+      "details": "Product page redirected; no reliable stock information.",
+      "city": "Charlotte",
+      "name": "t-mobile-charlotte-nc-28227-2286",
+      "url": "https://www.t-mobile.com/stores/pd/t-mobile-charlotte-nc-28227-2286/apple-iphone-duo",
+      "region": "Charlotte area",
+      "pickup_confirmed": false
+    },
+    {
+      "id": "t-mobile-charlotte-nc-28216-2rsb",
+      "state": "unknown",
+      "details": "Product page redirected; no reliable stock information.",
+      "city": "Charlotte",
+      "name": "t-mobile-charlotte-nc-28216-2rsb",
+      "url": "https://www.t-mobile.com/stores/pd/t-mobile-charlotte-nc-28216-2rsb/apple-iphone-duo",
+      "region": "Charlotte area",
+      "pickup_confirmed": false
+    },
+    {
+      "id": "t-mobile-charlotte-nc-28226-2911",
+      "state": "unknown",
+      "details": "Product page redirected; no reliable stock information.",
+      "city": "Charlotte",
+      "name": "t-mobile-charlotte-nc-28226-2911",
+      "url": "https://www.t-mobile.com/stores/pd/t-mobile-charlotte-nc-28226-2911/apple-iphone-duo",
+      "region": "Charlotte area",
+      "pickup_confirmed": false
+    },
+    {
+      "id": "t-mobile-charlotte-nc-28277-9352",
+      "state": "unknown",
+      "details": "Product page redirected; no reliable stock information.",
+      "city": "Charlotte",
+      "name": "t-mobile-charlotte-nc-28277-9352",
+      "url": "https://www.t-mobile.com/stores/pd/t-mobile-charlotte-nc-28277-9352/apple-iphone-duo",
+      "region": "Charlotte area",
+      "pickup_confirmed": false
+    },
+    {
+      "id": "t-mobile-concord-nc-28027-4382",
+      "state": "unknown",
+      "details": "Product page redirected; no reliable stock information.",
+      "city": "Concord",
+      "name": "t-mobile-concord-nc-28027-4382",
+      "url": "https://www.t-mobile.com/stores/pd/t-mobile-concord-nc-28027-4382/apple-iphone-duo",
+      "region": "Charlotte area",
+      "pickup_confirmed": false
+    },
+    {
+      "id": "t-mobile-concord-nc-28027-4021",
+      "state": "unknown",
+      "details": "Product page redirected; no reliable stock information.",
+      "city": "Concord",
+      "name": "t-mobile-concord-nc-28027-4021",
+      "url": "https://www.t-mobile.com/stores/pd/t-mobile-concord-nc-28027-4021/apple-iphone-duo",
+      "region": "Charlotte area",
+      "pickup_confirmed": false
+    },
     {
       "id": "t-mobile-washington-nc-27889-404f",
       "state": "unknown",
@@ -10,6 +110,7 @@
       "city": "Washington",
       "name": "t-mobile-washington-nc-27889-404f",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-washington-nc-27889-404f/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -19,6 +120,7 @@
       "city": "Greenville",
       "name": "Arlington Plaza",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-greenville-nc-27858-9422/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -28,6 +130,7 @@
       "city": "Williamston",
       "name": "t-mobile-williamston-nc-27892-1u42",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-williamston-nc-27892-1u42/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -37,6 +140,7 @@
       "city": "New Bern",
       "name": "t-mobile-new-bern-nc-28562-1u06",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-new-bern-nc-28562-1u06/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -46,6 +150,7 @@
       "city": "Kinston",
       "name": "t-mobile-kinston-nc-28504-2u52",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-kinston-nc-28504-2u52/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -55,6 +160,7 @@
       "city": "Rocky Mount",
       "name": "t-mobile-rocky-mount-nc-27804-2smf",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-rocky-mount-nc-27804-2smf/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -64,6 +170,7 @@
       "city": "Goldsboro",
       "name": "t-mobile-goldsboro-nc-27534-9420",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-goldsboro-nc-27534-9420/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -73,6 +180,7 @@
       "city": "Goldsboro",
       "name": "t-mobile-goldsboro-nc-27530-468g",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-goldsboro-nc-27530-468g/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -82,6 +190,7 @@
       "city": "Raleigh",
       "name": "t-mobile-raleigh-nc-27612-9820",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-raleigh-nc-27612-9820/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -91,6 +200,7 @@
       "city": "Raleigh",
       "name": "t-mobile-raleigh-nc-27609-9362",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-raleigh-nc-27609-9362/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -100,6 +210,7 @@
       "city": "Raleigh",
       "name": "t-mobile-raleigh-nc-27617-4sfq",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-raleigh-nc-27617-4sfq/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -109,6 +220,7 @@
       "city": "Durham",
       "name": "t-mobile-durham-nc-27713-2sme",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-durham-nc-27713-2sme/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -118,6 +230,7 @@
       "city": "Greensboro",
       "name": "t-mobile-greensboro-nc-27408-9408",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-greensboro-nc-27408-9408/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -127,6 +240,7 @@
       "city": "Jacksonville",
       "name": "t-mobile-jacksonville-nc-28546-372g",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-jacksonville-nc-28546-372g/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -136,6 +250,7 @@
       "city": "Wilmington",
       "name": "t-mobile-wilmington-nc-28403-2smt",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-wilmington-nc-28403-2smt/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     },
     {
@@ -145,6 +260,7 @@
       "city": "Fayetteville",
       "name": "Skibo Rd & Chason Ridge Dr",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-fayetteville-nc-28314-9356/apple-iphone-duo",
+      "region": "Eastern NC",
       "pickup_confirmed": false
     }
   ]
