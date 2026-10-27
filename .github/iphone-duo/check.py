@@ -2,6 +2,8 @@
 """Check exact store/SKU pickup status from Duo Checker's server-rendered table."""
 import argparse
 import os
+import json
+from pathlib import Path
 from datetime import datetime, timezone
 
 import requests
@@ -18,6 +20,8 @@ NEARBY_STORES = {
     "Lynnhaven Mall",            # Virginia Beach, VA
     "Short Pump Town Center",    # Richmond, VA
 }
+STORE_META = {'Crabtree Valley Mall': ['4325 Glenwood Avenue, Raleigh, NC 27612', 'crabtreevalleymall'], 'Southpoint': ['8030 Renaissance Parkway, Durham, NC 27713', 'southpoint'], 'Friendly Center': ['3320 West Friendly Avenue, Greensboro, NC 27410', 'friendlycenter'], 'Lynnhaven Mall': ['701 Lynnhaven Parkway, Virginia Beach, VA 23452', 'lynnhavenmall'], 'Short Pump Town Center': ['11800 W. Broad Street, Richmond, VA 23233', 'shortpumptowncenter'], 'SouthPark': ['4400 Sharon Road, Charlotte, NC 28211', 'southpark'], 'Birkdale Village': ['8805 Townley Rd, Huntersville, NC 28078', 'birkdalevillage']}
+NEARBY_STORES = set(STORE_META)
 COLORS = {"night-sky": "Night Sky", "star-white": "Star White"}
 STORAGE = {"256": "256GB", "512": "512GB", "1024": "1TB", "2048": "2TB"}
 VALID_STATES = {"available", "unavailable", "pickup not offered", "unknown"}
@@ -25,7 +29,7 @@ VALID_STATES = {"available", "unavailable", "pickup not offered", "unknown"}
 class ParseError(RuntimeError):
     pass
 
-def parse_inventory(html):
+def parse_inventory(html, include_all=False):
     """Return list of verified available local SKU entries; reject unexpected markup."""
     soup = BeautifulSoup(html, "html.parser")
     heading = soup.find("h1")
@@ -79,6 +83,10 @@ def parse_inventory(html):
                 })
             elif "sq-available" in classes:
                 raise ParseError(f"Conflicting availability data at {store}")
+            if include_all and state != "available":
+                available.append({"store":store,"city":city,"color":COLORS[color],"storage":STORAGE[storage],"state":state,"url":anchor["href"]})
+            elif include_all:
+                available[-1]["state"] = state
     missing = NEARBY_STORES - seen
     if missing:
         raise ParseError(f"Missing target Apple stores: {', '.join(sorted(missing))}")
@@ -153,11 +161,20 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true",
                         help="Read the live website and print findings; never notify")
+    parser.add_argument("--output")
     args = parser.parse_args()
     response = requests.get(URL, timeout=30,
         headers={"User-Agent": "Mozilla/5.0 (compatible; DuoStockMonitor/1.0)"})
     response.raise_for_status()
     available, rows = parse_inventory(response.text)
+    if args.output:
+        all_items, _ = parse_inventory(response.text, include_all=True)
+        stores = []
+        for name, (address, slug) in STORE_META.items():
+            stores.append({"name":name,"address":address,"region":"Charlotte area" if name in {"SouthPark","Birkdale Village"} else "Eastern NC & Virginia", "url":"https://www.apple.com/retail/"+slug+"/", "configurations":[x for x in all_items if x["store"]==name]})
+        target=Path(args.output)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(json.dumps({"checked_at":datetime.now(timezone.utc).isoformat(),"source":URL,"stores":stores},indent=2)+"\n")
     print(f"Verified HTML: {rows} store rows, {len(NEARBY_STORES)} monitored Apple stores")
     for item in available:
         print(f"IN STOCK: {item['store']}, {item['city']}: {item['color']} {item['storage']}")
@@ -168,3 +185,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
