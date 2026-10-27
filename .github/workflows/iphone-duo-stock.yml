@@ -26,16 +26,16 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r .github/iphone-duo/requirements.txt
       - name: Unit-test inventory parser
-        run: python -m unittest discover -s .github/iphone-duo -p 'test_check.py' -v
+        run: python -m unittest discover -s .github/iphone-duo -p 'test_*.py' -v
       - name: Validate live data and local filtering without notifications
         if: github.event_name == 'pull_request'
-        run: python .github/iphone-duo/check.py --dry-run
+        run: python .github/iphone-duo/radar.py --dry-run
       - name: Check stock and update notification issue
         if: github.event_name != 'pull_request'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-        run: python .github/iphone-duo/check.py --output data/apple-stock.json
+        run: python .github/iphone-duo/radar.py --output data/apple-stock.json
 
       - name: Publish Apple dashboard snapshot
         if: github.event_name != 'pull_request'
