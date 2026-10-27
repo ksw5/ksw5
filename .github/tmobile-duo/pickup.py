@@ -84,9 +84,37 @@ def collect():
         browser.close()
     return {'checked_at':now(),'source':'pickup_selector','results':results}
 
+
+def update_alerts(data):
+    """Alert only explicit, enabled pickup options; never alert unknown results."""
+    if not os.environ.get('GITHUB_TOKEN'): return
+    from check import github
+    import hashlib
+    label='tmobile-duo-pickup'
+    rows=data.get('results',[])
+    existing=github('GET',f'issues?labels={label}&state=open&per_page=100')
+    keys={re.search(r'<!-- pickup:([^ ]+) -->',i.get('body') or '').group(1):i for i in existing if re.search(r'<!-- pickup:([^ ]+) -->',i.get('body') or '')}
+    positives=[]
+    for row in rows:
+        prefix=row['zip']+'-'+row['color'].replace(' ','_')+'-'+row['storage']
+        if row['state']=='unavailable':
+            for key,issue in keys.items():
+                if key.startswith(prefix+'-'): github('PATCH',f"issues/{issue['number']}",json={'state':'closed'})
+        if row['state']=='available':
+            for store in row['stores']:
+                key=prefix+'-'+hashlib.sha256(store.encode()).hexdigest()[:12]
+                if key not in keys: positives.append((key,row,store))
+    if not positives: return
+    try: github('POST','labels',json={'name':label,'color':'168361','description':'Configuration-specific T-Mobile pickup selector alerts'})
+    except Exception as ex:
+        if getattr(getattr(ex,'response',None),'status_code',None)!=422: raise
+    for key,row,store in positives:
+        github('POST','issues',json={'title':f"Pickup reported: iPhone Duo {row['color']} {row['storage']} near {row['city']}", 'body':f"<!-- pickup:{key} -->\nT-Mobile's pickup selector reported an enabled pickup option.\n\n{store}\n\nConfiguration: {row['color']} {row['storage']}\nSearch: {row['zip']} (20 miles)\nChecked: {row['checked_at']}\n\nVerify and reserve on {URL}. This check does not reserve inventory.", 'labels':[label], 'assignees':[os.environ['GITHUB_REPOSITORY'].split('/')[0]]})
+
 if __name__=='__main__':
     target=Path('data/tmobile-pickup.json');target.parent.mkdir(exist_ok=True)
     try: data=collect()
     except Exception as ex:
         data={'checked_at':now(),'source':'pickup_selector','error':str(ex)[:300],'results':[]}
     target.write_text(json.dumps(data,indent=2)+'\n')
+    update_alerts(data)
