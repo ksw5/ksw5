@@ -23,23 +23,14 @@ MAX_STATUS_AGE_DAYS = 7
 # Specific T-Mobile public store pages independently located using T-Mobile's listings.
 # A sample of stores around ZIP 27889, NOT complete 200-mile coverage.
 SLUGS = (
-    ("Washington", "t-mobile-washington-nc-27889-404f"),
     ("Greenville", "t-mobile-greenville-nc-27858-9422"),
     ("Williamston", "t-mobile-williamston-nc-27892-1u42"),
-    ("New Bern", "t-mobile-new-bern-nc-28562-1u06"),
-    ("Kinston", "t-mobile-kinston-nc-28504-2u52"),
-    ("Rocky Mount", "t-mobile-rocky-mount-nc-27804-2smf"),
     ("Goldsboro", "t-mobile-goldsboro-nc-27534-9420"),
-    ("Goldsboro", "t-mobile-goldsboro-nc-27530-468g"),
-    ("Raleigh", "t-mobile-raleigh-nc-27612-9820"),
-    ("Raleigh", "t-mobile-raleigh-nc-27609-9362"),
-    ("Raleigh", "t-mobile-raleigh-nc-27617-4sfq"),
     ("Durham", "t-mobile-durham-nc-27713-2sme"),
     ("Greensboro", "t-mobile-greensboro-nc-27408-9408"),
-    ("Jacksonville", "t-mobile-jacksonville-nc-28546-372g"),
-    ("Wilmington", "t-mobile-wilmington-nc-28403-2smt"),
     ("Fayetteville", "t-mobile-fayetteville-nc-28314-9356"),
 )
+DASHBOARD_ISSUE = 5
 HTTP = requests.Session()
 HTTP.headers.update({"User-Agent": "Mozilla/5.0 (compatible; iPhoneDuoPersonalMonitor/1.0)"})
 
@@ -100,53 +91,6 @@ def github(method,path,**kw):
     resp.raise_for_status()
     return resp.json() if resp.content else {}
 
-def issue_store_key(body):
-    marker = re.search(r"<!-- tmobile-duo-key:([^ ]+) -->",body or "")
-    return marker.group(1) if marker else None
-
-def update_issues(known):
-    """No spurious updates for unknown/failed/redirected/temporarily inaccessible stores."""
-    existing = github("GET",f"issues?labels={LABEL}&state=open&per_page=100")
-    existing = {key:issue for issue in existing
-        if "pull_request" not in issue and (key := issue_store_key(issue.get("body"))) }
-    good = {slug:result for slug,result in known.items() if result[0] == "available"}
-    sold_out = {slug for slug,result in known.items() if result[0] == "unavailable"}
-    for key,issue in existing.items():
-        if key in sold_out:
-            github("PATCH",f"issues/{issue['number']}",json={"state":"closed"})
-            print(f"Closed T-Mobile stock alert #{issue['number']}: {key}")
-    if not good:
-        print("No new confirmed T-Mobile 'In stock' store pages.")
-        return
-    try:
-        github("POST","labels",json={"name":LABEL,"color":"e20074",
-            "description":"T-Mobile iPhone Duo in stock near Washington, NC"})
-    except requests.HTTPError as ex:
-        if ex.response.status_code != 422:  # label already exists
-            raise
-    owner = os.environ["GITHUB_REPOSITORY"].split("/")[0]
-    for slug, (state,details,city,name,url) in good.items():
-        if slug in existing:
-            print(f"Already notified about {name}, {city}")
-            continue
-        checked = datetime.now(TZ).strftime("%b %d, %Y at %I:%M %p %Z")
-        title = f"T-Mobile reports iPhone Duo in stock — {name}, {city}"
-        body = "\n".join([
-            f"<!-- tmobile-duo-key:{slug} -->",
-            f"T-Mobile's public **store-level** iPhone Duo page reported **In stock** on {checked}.",
-            f"- Store: **{name}**, {city}, NC",
-            f"- Source: {url}",
-            f"- Stock timestamp: {details}",
-            "",
-            "**Important:** This is the MODEL-LEVEL in-store indicator only. "
-            "**Color, storage size and online in-store pickup eligibility are not confirmed.** "
-            "Open the link, select your exact configuration, and verify the pickup option "
-            "at checkout or call the store before traveling. Inventory may sell out.",
-        ])
-        issue=github("POST","issues",json={"title":title,"body":body,
-            "labels":[LABEL],"assignees":[owner]})
-        print(f"NEW T-MOBILE ALERT: {issue['html_url']}")
-
 def collect():
     known={}
     for i,(city,slug) in enumerate(SLUGS):
@@ -171,17 +115,37 @@ def collect():
     return known
 
 def main():
+    import json
     ap=argparse.ArgumentParser()
     ap.add_argument("--dry-run",action="store_true")
     args=ap.parse_args()
     known=collect()
-    print(f"Checked {len(SLUGS)} candidate T-Mobile stores near ZIP {ZIP}; "
-          f"available={sum(x[0]=='available' for x in known.values())}, "
-          f"unknown={sum(x[0]=='unknown' for x in known.values())}")
+    checked=datetime.now(timezone.utc).isoformat(timespec="seconds")
+    stores=[]
+    for slug, (state,details,city,name,url) in known.items():
+        stores.append({
+            "id":slug, "city":city, "name":name, "url":url,
+            "state":("listing_in_stock_unverified" if state=="available" else
+                     "high_demand_unverified" if state=="unavailable" else "unknown"),
+            "note":details, "pickup_verified":False,
+            "checked_at":checked,
+        })
+    data={
+        "source":"tmobile", "kind":"model_listing_not_pickup",
+        "zipcode":"27889", "checked_at":checked,
+        "check_interval_minutes":5, "pickup_confirmed":0, "stores":stores,
+        "warning":"T-Mobile's public model-level In stock label does NOT confirm pickup at checkout. We do not notify based on it."
+    }
+    print("Listing-only results:", json.dumps([(x["city"],x["state"]) for x in stores]))
     if args.dry_run:
-        print("DRY RUN: no GitHub issues will be created or modified")
-    else:
-        update_issues(known)
+        print("DRY RUN: no writes and no stock alerts")
+        return
+    # Only publish display data. Never create an assigned stock notification.
+    body = ("<!-- duo-dashboard-data -->\n<!-- JSON_START -->\n"+
+            json.dumps(data,indent=2)+"\n<!-- JSON_END -->\n"+
+            "Machine-readable status for the public stock dashboard, not pickup confirmation.")
+    result=github("PATCH",f"issues/{DASHBOARD_ISSUE}",json={"body":body})
+    print("Updated dashboard data issue #",result["number"])
 
 if __name__=="__main__":
     main()
