@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T08:51:41.928756+00:00",
+  "checked_at": "2026-10-27T08:56:03.968920+00:00",
   "source": "automated_pickup_selector",
   "results": [
     {
@@ -11,16 +11,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T08:49:35.853730+00:00",
-      "state": "available",
-      "stores": [
-        "Dulles Retail Pl & Columbia Pl (0.1 mi)\n\nT-Mobile Experience Store\n\n22000 Dulles Retail Plaza Suite 182, Sterling, VA, 20166\n\nToday's hours: 10am - 8pm\n\nIn Stock",
-        "Fair Oaks Mall (10.8 mi)\n\n11913U Fair Oaks Mall, Fairfax, VA, 22033\n\nToday's hours: 10am - 8pm\n\nHurry, only a few left",
-        "Fairfax Blvd & Main St (12.3 mi)\n\nT-Mobile Experience Store\n\n10955 Fairfax Blvd Suite 110, Fairfax, VA, 22030\n\nToday's hours: 10am - 9pm\n\nIn Stock",
-        "Tyson's Corner (13.1 mi)\n\nT-Mobile Experience Store\n\n1961 Chain Bridge Rd Ste J008L, McLean, VA, 22102\n\nToday's hours: 10am - 9pm\n\nIn Stock",
-        "Firstfield Shopping Center (15.1 mi)\n\nT-Mobile Experience Store\n\n527 Quince Orchard Rd, Gaithersburg, MD, 20878\n\nToday's hours: 10am - 8pm\n\nIn Stock"
-      ],
-      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nSearch results available below.\n\nDulles Retail Pl & Columbia Pl (0.1 mi)\n\nT-Mobile Experience Store\n\n22000 Dulles Retail Plaza Suite 182, Sterling, VA, 20166\n\nToday's hours: 10am - 8pm\n\nIn Stock\n\nFair Oaks Mall (10.8 mi)\n\n11913U Fair Oaks Mall, Fairfax, VA, 22033\n\nToday's hours: 10am - 8pm\n\nHurry, only a few left\n\nFairfax Blvd & Main St (12.3 mi)\n\nT-Mobile Experience Store\n\n10955 Fairfax Blvd Suite 110, Fairfax, VA, 22030\n\nToday's hours: 10am - 9pm\n\nIn Stock\n\nTyson's Corner (13.1 mi)\n\nT-Mobile Experience Store\n\n1961 Chain Bridge Rd Ste J008L, McLean, VA, 22102\n\nToday's hours: 10am - 9pm\n\nIn Stock\n\nFirstfield Shopping Center (15.1 mi)\n\nT-Mobile Experience Store\n\n527 Quince Orchard Rd, Gaithersburg, MD, 20878\n\nToday's hours: 10am - 8pm\n\nIn Stock\nPick up here",
+      "checked_at": "2026-10-27T08:54:03.626116+00:00",
+      "state": "unknown",
+      "stores": [],
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Burgundy\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-2\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div data-a11y-dialog-hide=\"\" class=\"phx-modal__overlay\" id=\"tnt269975_BotSheetModalOverlay\"></div> from <div>\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div data-a11y-dialog-hide=\"\" class=\"phx-modal__overlay\" id=\"tnt269975_BotSheetModalOverlay\"></div> from <div>\u2026</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    18 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n    ",
       "product": "iPhone 18 Pro Max"
     },
     {
@@ -32,25 +26,25 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T08:49:46.057113+00:00",
-      "state": "unavailable",
-      "stores": [],
-      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores.",
-      "product": "iPhone 18 Pro Max"
-    },
-    {
-      "color": "Silver",
-      "storage": "256GB",
-      "source": "pickup_selector",
-      "url": "https://www.t-mobile.com/cell-phone/apple-iphone-18-pro-max",
-      "region": "Eastern NC",
-      "city": "Washington",
-      "zip": "27889",
-      "radius_miles": 20,
-      "checked_at": "2026-10-27T08:50:13.459947+00:00",
+      "checked_at": "2026-10-27T08:54:03.626188+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Pickup search could not be verified: Search location did not remain selected",
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Burgundy\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-2\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div data-a11y-dialog-hide=\"\" class=\"phx-modal__overlay\" id=\"tnt269975_BotSheetModalOverlay\"></div> from <div>\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div data-a11y-dialog-hide=\"\" class=\"phx-modal__overlay\" id=\"tnt269975_BotSheetModalOverlay\"></div> from <div>\u2026</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    18 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n    ",
+      "product": "iPhone 18 Pro Max"
+    },
+    {
+      "color": "Silver",
+      "storage": "256GB",
+      "source": "pickup_selector",
+      "url": "https://www.t-mobile.com/cell-phone/apple-iphone-18-pro-max",
+      "region": "Eastern NC",
+      "city": "Washington",
+      "zip": "27889",
+      "radius_miles": 20,
+      "checked_at": "2026-10-27T08:54:17.296143+00:00",
+      "state": "unavailable",
+      "stores": [],
+      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores.",
       "product": "iPhone 18 Pro Max"
     },
     {
@@ -62,7 +56,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T08:50:22.165393+00:00",
+      "checked_at": "2026-10-27T08:54:30.115133+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores.",
@@ -77,7 +71,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T08:50:49.222245+00:00",
+      "checked_at": "2026-10-27T08:54:57.056328+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores.",
@@ -92,7 +86,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T08:50:58.329927+00:00",
+      "checked_at": "2026-10-27T08:55:09.907697+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores.",
@@ -107,7 +101,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T08:51:25.127913+00:00",
+      "checked_at": "2026-10-27T08:55:37.128841+00:00",
       "state": "available",
       "stores": [
         "Arlington Plaza (18.1 mi)\n\n600-C SE Greenville Blvd, Greenville, NC, 27858\n\nToday's hours: 10am - 8pm\n\nIn Stock"
@@ -124,7 +118,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T08:51:33.781782+00:00",
+      "checked_at": "2026-10-27T08:55:50.495023+00:00",
       "state": "available",
       "stores": [
         "The Shoppes at Univ Place (7.9 mi)\n\n8944 Jm Keynes Drive Suite 310, Charlotte, NC, 28262\n\nToday's hours: 10am - 8pm\n\nIn Stock"
