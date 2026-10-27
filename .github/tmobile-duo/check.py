@@ -6,6 +6,8 @@ for purchase" is alertable. Exact SKU and pickup eligibility CANNOT be determine
 from this page; alert titles and bodies say so. Read-only by default in --dry-run.
 """
 import argparse
+import json
+from pathlib import Path
 import re
 import os
 import time
@@ -173,8 +175,13 @@ def collect():
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--dry-run",action="store_true")
+    ap.add_argument("--output", help="Write a dashboard JSON snapshot")
     args=ap.parse_args()
     known=collect()
+    if args.output:
+        target=Path(args.output)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(json.dumps({"checked_at": datetime.now(TZ).isoformat(), "zip": ZIP, "product": "iPhone Duo", "stores": [{"id": slug, "state": row[0], "details": row[1], "city": row[2], "name": row[3], "url": row[4], "pickup_confirmed": False} for slug,row in known.items()]}, indent=2) + "\n")
     print(f"Checked {len(SLUGS)} candidate T-Mobile stores near ZIP {ZIP}; "
           f"available={sum(x[0]=='available' for x in known.values())}, "
           f"unknown={sum(x[0]=='unknown' for x in known.values())}")
