@@ -1,6 +1,8 @@
 {
-  "checked_at": "2026-10-27T16:12:37.275035+00:00",
-  "source": "https://duo-checker.on-forge.com/",
+  "checked_at": "2026-10-27T16:13:24+00:00",
+  "fetched_at": "2026-10-27T16:13:42.116613+00:00",
+  "source": "https://instockradar.com/us/iphone-duo",
+  "source_name": "InStockRadar",
   "stores": [
     {
       "name": "Crabtree Valley Mall",
@@ -9,68 +11,84 @@
       "url": "https://www.apple.com/retail/crabtreevalleymall/",
       "configurations": [
         {
+          "key": "R116:night-sky:256",
           "store": "Crabtree Valley Mall",
           "city": "Raleigh",
           "color": "Night Sky",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R116"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R116"
         },
         {
-          "store": "Crabtree Valley Mall",
-          "city": "Raleigh",
-          "color": "Night Sky",
-          "storage": "512GB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R116"
-        },
-        {
-          "store": "Crabtree Valley Mall",
-          "city": "Raleigh",
-          "color": "Night Sky",
-          "storage": "1TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R116"
-        },
-        {
-          "store": "Crabtree Valley Mall",
-          "city": "Raleigh",
-          "color": "Night Sky",
-          "storage": "2TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R116"
-        },
-        {
+          "key": "R116:star-white:256",
           "store": "Crabtree Valley Mall",
           "city": "Raleigh",
           "color": "Star White",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R116"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R116"
         },
         {
+          "key": "R116:night-sky:512",
+          "store": "Crabtree Valley Mall",
+          "city": "Raleigh",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R116"
+        },
+        {
+          "key": "R116:star-white:512",
           "store": "Crabtree Valley Mall",
           "city": "Raleigh",
           "color": "Star White",
           "storage": "512GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R116"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R116"
         },
         {
+          "key": "R116:night-sky:1024",
+          "store": "Crabtree Valley Mall",
+          "city": "Raleigh",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R116"
+        },
+        {
+          "key": "R116:star-white:1024",
           "store": "Crabtree Valley Mall",
           "city": "Raleigh",
           "color": "Star White",
           "storage": "1TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R116"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R116"
         },
         {
+          "key": "R116:night-sky:2048",
+          "store": "Crabtree Valley Mall",
+          "city": "Raleigh",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R116"
+        },
+        {
+          "key": "R116:star-white:2048",
           "store": "Crabtree Valley Mall",
           "city": "Raleigh",
           "color": "Star White",
           "storage": "2TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R116"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R116"
         }
       ]
     },
@@ -81,68 +99,84 @@
       "url": "https://www.apple.com/retail/southpoint/",
       "configurations": [
         {
+          "key": "R049:night-sky:256",
           "store": "Southpoint",
           "city": "Durham",
           "color": "Night Sky",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R049"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R049"
         },
         {
-          "store": "Southpoint",
-          "city": "Durham",
-          "color": "Night Sky",
-          "storage": "512GB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R049"
-        },
-        {
-          "store": "Southpoint",
-          "city": "Durham",
-          "color": "Night Sky",
-          "storage": "1TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R049"
-        },
-        {
-          "store": "Southpoint",
-          "city": "Durham",
-          "color": "Night Sky",
-          "storage": "2TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R049"
-        },
-        {
+          "key": "R049:star-white:256",
           "store": "Southpoint",
           "city": "Durham",
           "color": "Star White",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R049"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R049"
         },
         {
+          "key": "R049:night-sky:512",
+          "store": "Southpoint",
+          "city": "Durham",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R049"
+        },
+        {
+          "key": "R049:star-white:512",
           "store": "Southpoint",
           "city": "Durham",
           "color": "Star White",
           "storage": "512GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R049"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R049"
         },
         {
+          "key": "R049:night-sky:1024",
+          "store": "Southpoint",
+          "city": "Durham",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R049"
+        },
+        {
+          "key": "R049:star-white:1024",
           "store": "Southpoint",
           "city": "Durham",
           "color": "Star White",
           "storage": "1TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R049"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R049"
         },
         {
+          "key": "R049:night-sky:2048",
+          "store": "Southpoint",
+          "city": "Durham",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R049"
+        },
+        {
+          "key": "R049:star-white:2048",
           "store": "Southpoint",
           "city": "Durham",
           "color": "Star White",
           "storage": "2TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R049"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R049"
         }
       ]
     },
@@ -153,68 +187,84 @@
       "url": "https://www.apple.com/retail/friendlycenter/",
       "configurations": [
         {
+          "key": "R293:night-sky:256",
           "store": "Friendly Center",
           "city": "Greensboro",
           "color": "Night Sky",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R293"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R293"
         },
         {
-          "store": "Friendly Center",
-          "city": "Greensboro",
-          "color": "Night Sky",
-          "storage": "512GB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R293"
-        },
-        {
-          "store": "Friendly Center",
-          "city": "Greensboro",
-          "color": "Night Sky",
-          "storage": "1TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R293"
-        },
-        {
-          "store": "Friendly Center",
-          "city": "Greensboro",
-          "color": "Night Sky",
-          "storage": "2TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R293"
-        },
-        {
+          "key": "R293:star-white:256",
           "store": "Friendly Center",
           "city": "Greensboro",
           "color": "Star White",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R293"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R293"
         },
         {
+          "key": "R293:night-sky:512",
+          "store": "Friendly Center",
+          "city": "Greensboro",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R293"
+        },
+        {
+          "key": "R293:star-white:512",
           "store": "Friendly Center",
           "city": "Greensboro",
           "color": "Star White",
           "storage": "512GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R293"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R293"
         },
         {
+          "key": "R293:night-sky:1024",
+          "store": "Friendly Center",
+          "city": "Greensboro",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R293"
+        },
+        {
+          "key": "R293:star-white:1024",
           "store": "Friendly Center",
           "city": "Greensboro",
           "color": "Star White",
           "storage": "1TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R293"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R293"
         },
         {
+          "key": "R293:night-sky:2048",
+          "store": "Friendly Center",
+          "city": "Greensboro",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R293"
+        },
+        {
+          "key": "R293:star-white:2048",
           "store": "Friendly Center",
           "city": "Greensboro",
           "color": "Star White",
           "storage": "2TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R293"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R293"
         }
       ]
     },
@@ -225,68 +275,84 @@
       "url": "https://www.apple.com/retail/lynnhavenmall/",
       "configurations": [
         {
+          "key": "R614:night-sky:256",
           "store": "Lynnhaven Mall",
           "city": "Virginia Beach",
           "color": "Night Sky",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R614"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R614"
         },
         {
-          "store": "Lynnhaven Mall",
-          "city": "Virginia Beach",
-          "color": "Night Sky",
-          "storage": "512GB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R614"
-        },
-        {
-          "store": "Lynnhaven Mall",
-          "city": "Virginia Beach",
-          "color": "Night Sky",
-          "storage": "1TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R614"
-        },
-        {
-          "store": "Lynnhaven Mall",
-          "city": "Virginia Beach",
-          "color": "Night Sky",
-          "storage": "2TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R614"
-        },
-        {
+          "key": "R614:star-white:256",
           "store": "Lynnhaven Mall",
           "city": "Virginia Beach",
           "color": "Star White",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R614"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R614"
         },
         {
+          "key": "R614:night-sky:512",
+          "store": "Lynnhaven Mall",
+          "city": "Virginia Beach",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R614"
+        },
+        {
+          "key": "R614:star-white:512",
           "store": "Lynnhaven Mall",
           "city": "Virginia Beach",
           "color": "Star White",
           "storage": "512GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R614"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R614"
         },
         {
+          "key": "R614:night-sky:1024",
+          "store": "Lynnhaven Mall",
+          "city": "Virginia Beach",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R614"
+        },
+        {
+          "key": "R614:star-white:1024",
           "store": "Lynnhaven Mall",
           "city": "Virginia Beach",
           "color": "Star White",
           "storage": "1TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R614"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R614"
         },
         {
+          "key": "R614:night-sky:2048",
+          "store": "Lynnhaven Mall",
+          "city": "Virginia Beach",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R614"
+        },
+        {
+          "key": "R614:star-white:2048",
           "store": "Lynnhaven Mall",
           "city": "Virginia Beach",
           "color": "Star White",
           "storage": "2TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R614"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R614"
         }
       ]
     },
@@ -297,68 +363,84 @@
       "url": "https://www.apple.com/retail/shortpumptowncenter/",
       "configurations": [
         {
+          "key": "R078:night-sky:256",
           "store": "Short Pump Town Center",
           "city": "Richmond",
           "color": "Night Sky",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R078"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R078"
         },
         {
-          "store": "Short Pump Town Center",
-          "city": "Richmond",
-          "color": "Night Sky",
-          "storage": "512GB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R078"
-        },
-        {
-          "store": "Short Pump Town Center",
-          "city": "Richmond",
-          "color": "Night Sky",
-          "storage": "1TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R078"
-        },
-        {
-          "store": "Short Pump Town Center",
-          "city": "Richmond",
-          "color": "Night Sky",
-          "storage": "2TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R078"
-        },
-        {
+          "key": "R078:star-white:256",
           "store": "Short Pump Town Center",
           "city": "Richmond",
           "color": "Star White",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R078"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R078"
         },
         {
+          "key": "R078:night-sky:512",
+          "store": "Short Pump Town Center",
+          "city": "Richmond",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R078"
+        },
+        {
+          "key": "R078:star-white:512",
           "store": "Short Pump Town Center",
           "city": "Richmond",
           "color": "Star White",
           "storage": "512GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R078"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R078"
         },
         {
+          "key": "R078:night-sky:1024",
+          "store": "Short Pump Town Center",
+          "city": "Richmond",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R078"
+        },
+        {
+          "key": "R078:star-white:1024",
           "store": "Short Pump Town Center",
           "city": "Richmond",
           "color": "Star White",
           "storage": "1TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R078"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R078"
         },
         {
+          "key": "R078:night-sky:2048",
+          "store": "Short Pump Town Center",
+          "city": "Richmond",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R078"
+        },
+        {
+          "key": "R078:star-white:2048",
           "store": "Short Pump Town Center",
           "city": "Richmond",
           "color": "Star White",
           "storage": "2TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R078"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R078"
         }
       ]
     },
@@ -369,68 +451,84 @@
       "url": "https://www.apple.com/retail/southpark/",
       "configurations": [
         {
+          "key": "R083:night-sky:256",
           "store": "SouthPark",
           "city": "Charlotte",
           "color": "Night Sky",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R083"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R083"
         },
         {
-          "store": "SouthPark",
-          "city": "Charlotte",
-          "color": "Night Sky",
-          "storage": "512GB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R083"
-        },
-        {
-          "store": "SouthPark",
-          "city": "Charlotte",
-          "color": "Night Sky",
-          "storage": "1TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R083"
-        },
-        {
-          "store": "SouthPark",
-          "city": "Charlotte",
-          "color": "Night Sky",
-          "storage": "2TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R083"
-        },
-        {
+          "key": "R083:star-white:256",
           "store": "SouthPark",
           "city": "Charlotte",
           "color": "Star White",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R083"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R083"
         },
         {
+          "key": "R083:night-sky:512",
+          "store": "SouthPark",
+          "city": "Charlotte",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R083"
+        },
+        {
+          "key": "R083:star-white:512",
           "store": "SouthPark",
           "city": "Charlotte",
           "color": "Star White",
           "storage": "512GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R083"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R083"
         },
         {
+          "key": "R083:night-sky:1024",
+          "store": "SouthPark",
+          "city": "Charlotte",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R083"
+        },
+        {
+          "key": "R083:star-white:1024",
           "store": "SouthPark",
           "city": "Charlotte",
           "color": "Star White",
           "storage": "1TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R083"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R083"
         },
         {
+          "key": "R083:night-sky:2048",
+          "store": "SouthPark",
+          "city": "Charlotte",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R083"
+        },
+        {
+          "key": "R083:star-white:2048",
           "store": "SouthPark",
           "city": "Charlotte",
           "color": "Star White",
           "storage": "2TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R083"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R083"
         }
       ]
     },
@@ -441,68 +539,84 @@
       "url": "https://www.apple.com/retail/birkdalevillage/",
       "configurations": [
         {
+          "key": "R796:night-sky:256",
           "store": "Birkdale Village",
           "city": "Huntersville",
           "color": "Night Sky",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R796"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R796"
         },
         {
-          "store": "Birkdale Village",
-          "city": "Huntersville",
-          "color": "Night Sky",
-          "storage": "512GB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R796"
-        },
-        {
-          "store": "Birkdale Village",
-          "city": "Huntersville",
-          "color": "Night Sky",
-          "storage": "1TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R796"
-        },
-        {
-          "store": "Birkdale Village",
-          "city": "Huntersville",
-          "color": "Night Sky",
-          "storage": "2TB",
-          "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R796"
-        },
-        {
+          "key": "R796:star-white:256",
           "store": "Birkdale Village",
           "city": "Huntersville",
           "color": "Star White",
           "storage": "256GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R796"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R796"
         },
         {
+          "key": "R796:night-sky:512",
+          "store": "Birkdale Village",
+          "city": "Huntersville",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R796"
+        },
+        {
+          "key": "R796:star-white:512",
           "store": "Birkdale Village",
           "city": "Huntersville",
           "color": "Star White",
           "storage": "512GB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R796"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R796"
         },
         {
+          "key": "R796:night-sky:1024",
+          "store": "Birkdale Village",
+          "city": "Huntersville",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R796"
+        },
+        {
+          "key": "R796:star-white:1024",
           "store": "Birkdale Village",
           "city": "Huntersville",
           "color": "Star White",
           "storage": "1TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R796"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R796"
         },
         {
+          "key": "R796:night-sky:2048",
+          "store": "Birkdale Village",
+          "city": "Huntersville",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R796"
+        },
+        {
+          "key": "R796:star-white:2048",
           "store": "Birkdale Village",
           "city": "Huntersville",
           "color": "Star White",
           "storage": "2TB",
           "state": "unavailable",
-          "url": "https://duo-checker.on-forge.com/stores/R796"
+          "checked_at": "2026-10-27T16:13:24+00:00",
+          "url": "https://instockradar.com/us/iphone-duo#s-R796"
         }
       ]
     }
