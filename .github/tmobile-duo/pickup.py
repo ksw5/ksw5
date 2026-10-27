@@ -3,6 +3,7 @@ import json, os, re, time
 from pathlib import Path
 from datetime import datetime, timezone
 
+MODEL = 'iPhone Duo'
 URL = 'https://www.t-mobile.com/cell-phone/apple-iphone-duo'
 AREAS = [('Eastern NC','Washington','27889'), ('Charlotte area','Charlotte','28202')]
 COLORS = ['Star White','Night Sky']
@@ -62,10 +63,10 @@ def collect():
                         if not choice.is_checked():
                             if not choice.is_enabled(): raise ValueError('Storage option disabled; pickup not checked for this configuration')
                             page.locator("label[for=\""+choice.get_attribute("id")+"\"]").click();settle(page)
-                        alt=page.get_by_role('img',name=re.compile(r'^Apple iPhone Duo - '+re.escape(color)+' - '+re.escape(size))).first.get_attribute('alt')
+                        alt=page.get_by_role('img',name=re.compile(r'^Apple '+re.escape(MODEL)+' - '+re.escape(color)+' - '+re.escape(size))).first.get_attribute('alt')
                         if not alt: raise ValueError('Selected configuration could not be verified')
                         page.locator('label[data-radiofieldid="BOPIS"]').click()
-                        page.get_by_text('Your store:',exact=True).locator('..').get_by_role('button').click()
+                        page.locator('[data-publish-event-topic="INITIATE_BOPIS_STORE_LOCATOR_MODAL"]:visible').click()
                     except Exception as ex:
                         body=page.locator('body').inner_text()[:3000]
                         if re.search(r'verify you are human|automated traffic|access denied|checking your browser',body,re.I): blocked=True
