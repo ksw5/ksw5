@@ -1,4 +1,4 @@
-name: T-Mobile iPhone Duo availability
+name: T-Mobile Duo listings (pickup unverified)
 on:
   pull_request:
     paths:
@@ -11,7 +11,7 @@ on:
       - '.github/workflows/tmobile-duo-stock.yml'
   workflow_dispatch:
   schedule:
-    - cron: '12,32,52 * * * *'
+    - cron: '2/5 * * * *'
 permissions:
   contents: read
   issues: write
@@ -33,7 +33,7 @@ jobs:
       - name: Verify against real T-Mobile listings without notifications
         if: github.event_name == 'pull_request'
         run: python .github/tmobile-duo/check.py --dry-run
-      - name: Check T-Mobile store stock and create alerts
+      - name: Refresh T-Mobile listing dashboard (no pickup alerts)
         if: github.event_name != 'pull_request'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
