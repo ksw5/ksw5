@@ -1,0 +1,92 @@
+"""Read-only T-Mobile pickup selector monitor. Never adds to cart or reserves stock."""
+import json, os, re, time
+from pathlib import Path
+from datetime import datetime, timezone
+from playwright.sync_api import sync_playwright
+
+URL = 'https://www.t-mobile.com/cell-phone/apple-iphone-duo'
+AREAS = [('Eastern NC','Washington','27889'), ('Charlotte area','Charlotte','28202')]
+COLORS = ['Star White','Night Sky']
+SIZES = ['256GB','512GB','1TB','2TB']
+NO_PICKUP = "The chosen item isn't available for pickup at stores within 20 miles"
+
+def classify(text, options):
+    if NO_PICKUP in text:
+        return 'unavailable', []
+    good = [o['text'] for o in options if o['enabled'] and re.search(r'\b(?:available for pickup|ready for pickup|pick up today|pickup today)\b',o['text'],re.I) and not re.search(r'\b(?:not available|unavailable|out of stock)\b',o['text'],re.I)]
+    return ('available', good) if good else ('unknown', [])
+
+def now(): return datetime.now(timezone.utc).isoformat()
+
+def settle(page):
+    page.wait_for_timeout(1500)
+    try: page.wait_for_load_state('networkidle',timeout=15000)
+    except Exception: pass
+
+def read_search(page, zipcode):
+    dialog=page.get_by_role('dialog',name='Select a store for pickup')
+    box=dialog.get_by_role('textbox',name='Search',exact=True)
+    box.fill(zipcode)
+    # Require a fresh result mutation after submission, not a previous ZIP's message.
+    dialog.evaluate("e => {window.__pickupChanges=0; window.__pickupObserver?.disconnect(); window.__pickupObserver=new MutationObserver(m=>{if(m.some(x=>x.type==='childList'||x.type==='characterData'))window.__pickupChanges++}); window.__pickupObserver.observe(e,{subtree:true,childList:true,characterData:true});}")
+    box.press('Enter')
+    page.wait_for_function('window.__pickupChanges > 0',timeout=20000)
+    settle(page)
+    text=dialog.inner_text()
+    page.wait_for_timeout(1500)
+    if text != dialog.inner_text():
+        settle(page); text=dialog.inner_text()
+    if box.input_value() != zipcode: raise ValueError('Search location did not remain selected')
+    options=dialog.get_by_role('radio').evaluate_all("els=>els.map(e=>({text:e.getAttribute('aria-label')||e.closest('label')?.innerText||'',enabled:!e.disabled&&e.getAttribute('aria-disabled')!=='true'}))")
+    state,stores=classify(text,options)
+    return state,stores,text[:6000]
+
+def collect():
+    results=[]
+    with sync_playwright() as p:
+        browser=p.chromium.launch(headless=True)
+        page=browser.new_page(locale='en-US')
+        page.set_default_timeout(18000)
+        blocked=False
+        for color in COLORS:
+            for size in SIZES:
+                base={'color':color,'storage':size,'source':'pickup_selector','url':URL}
+                error=None
+                if not blocked:
+                    try:
+                        page.goto(URL,wait_until='domcontentloaded',timeout=45000)
+                        page.get_by_role('group',name='Device colors',exact=True).locator('label.color-swatch-card').filter(has_text=color).click()
+                        settle(page)
+                        choice=page.get_by_role('radiogroup',name='Storage and payments').get_by_role('radio',name=re.compile('^'+re.escape(size)+r'\b'))
+                        if not choice.is_checked():
+                            if not choice.is_enabled(): raise ValueError('Storage option disabled; pickup not checked for this configuration')
+                            choice.check();settle(page)
+                        alt=page.get_by_role('img',name=re.compile(r'^Apple iPhone Duo - '+re.escape(color)+' - '+re.escape(size))).first.get_attribute('alt')
+                        if not alt: raise ValueError('Selected configuration could not be verified')
+                        page.get_by_role('radio',name=re.compile('^Pick up in store')).click()
+                        page.get_by_text('Your store:',exact=True).locator('..').get_by_role('button').click()
+                    except Exception as ex:
+                        body=page.locator('body').inner_text()[:3000]
+                        if re.search(r'verify you are human|automated traffic|access denied|checking your browser',body,re.I): blocked=True
+                        error=('Site blocked automated access' if blocked else str(ex).split('Call log:')[0][:350])
+                else: error='Site blocked automated access; no further requests attempted'
+                for region,city,zipcode in AREAS:
+                    row={**base,'region':region,'city':city,'zip':zipcode,'radius_miles':20,'checked_at':now(),'state':'unknown','stores':[]}
+                    if error: row['details']=error
+                    else:
+                        try:
+                            state,stores,evidence=read_search(page,zipcode)
+                            row.update(state=state,stores=stores,details=evidence)
+                        except Exception as ex:
+                            row['details']='Pickup search could not be verified: '+str(ex).split('Call log:')[0][:300]
+                    results.append(row)
+                    print(json.dumps({k:row[k] for k in ('color','storage','zip','state','details')}),flush=True)
+        browser.close()
+    return {'checked_at':now(),'source':'pickup_selector','results':results}
+
+if __name__=='__main__':
+    target=Path('data/tmobile-pickup.json');target.parent.mkdir(exist_ok=True)
+    try: data=collect()
+    except Exception as ex:
+        data={'checked_at':now(),'source':'pickup_selector','error':str(ex)[:300],'results':[]}
+    target.write_text(json.dumps(data,indent=2)+'\n')
