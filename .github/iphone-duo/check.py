@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check exact store/SKU pickup status from Duo Checker's server-rendered table."""
 import argparse
+import json
 import os
 from datetime import datetime, timezone
 
@@ -149,6 +150,49 @@ def synchronize_issues(current):
         })
         print(f"NEW STOCK ALERT: {issue['html_url']}")
 
+
+def dashboard_snapshot(html, available):
+    """Read the same validated Apple store rows as the notification parser."""
+    soup = BeautifulSoup(html, "html.parser")
+    now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    matching = {}
+    for item in available:
+        matching.setdefault(item["store"], []).append({
+            "color": item["color"], "storage": item["storage"],
+            "url": item["url"],
+        })
+    store_rows = []
+    for row in soup.select("tr[data-store]"):
+        a = row.select_one('th[scope="row"] a[href]')
+        if not a: continue
+        name = a.get_text(" ", strip=True)
+        if name not in NEARBY_STORES: continue
+        city_el = row.select_one('th[scope="row"] small')
+        city = city_el.get_text(" ", strip=True) if city_el else ""
+        skus = matching.get(name, [])
+        store_rows.append({
+            "name":name,"city":city,"id":a["href"].split("/")[-1],
+            "url":a["href"],"state":"pickup_shown" if skus else "no_pickup_shown",
+            "variants":skus,"checked_at":now
+        })
+    if {x["name"] for x in store_rows} != NEARBY_STORES:
+        raise ParseError("Some nearby store rows missing; refusing partial dashboard data")
+    return {
+        "source":"apple","kind":"pickup_by_sku","zipcode":"27889",
+        "checked_at":now,"check_interval_minutes":20,
+        "pickup_confirmed":len([x for x in store_rows if x["state"]=="pickup_shown"]),
+        "stores":store_rows,
+        "warning":"Pickup indications come from a third-party inventory checker. Verify on Apple.com before traveling."
+    }
+
+def publish_dashboard_snapshot(html, available):
+    data=dashboard_snapshot(html,available)
+    body=("<!-- duo-dashboard-data -->\n<!-- JSON_START -->\n"+
+          json.dumps(data,indent=2)+"\n<!-- JSON_END -->\n"+
+          "Stock dashboard data from the third-party Apple Store checker.")
+    issue=github("PATCH","issues/6",json={"body":body})
+    print("Updated Apple dashboard data issue #",issue["number"])
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true",
@@ -165,6 +209,7 @@ def main():
         print("DRY RUN: notification writes disabled")
         return
     synchronize_issues(available)
+    publish_dashboard_snapshot(response.text, available)
 
 if __name__ == "__main__":
     main()
