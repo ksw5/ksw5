@@ -23,9 +23,20 @@ def settle(page):
     try: page.wait_for_load_state('networkidle',timeout=4000)
     except Exception: pass
 
+def validate_area(stores, zipcode):
+    # Reject default-location or previous-area results while the new search loads.
+    patterns = {
+        '27889': r',\s*NC,?\s+278\d{2}\b',
+        '28202': r',\s*(?:NC,?\s+28[012]\d{2}|SC,?\s+297\d{2})\b',
+    }
+    pattern = patterns.get(zipcode)
+    return bool(pattern) and all(re.search(pattern, store, re.I) for store in stores)
+
 def read_search(page, zipcode):
     dialog=page.get_by_role('dialog',name='Select a store for pickup')
     box=dialog.get_by_role('textbox',name='Search',exact=True)
+    # Let the initial/default-location search finish before submitting another ZIP.
+    settle(page)
     box.fill(zipcode)
     # Require a fresh result mutation after submission, not a previous ZIP's message.
     dialog.evaluate("e => {window.__pickupChanges=0; window.__pickupObserver?.disconnect(); window.__pickupObserver=new MutationObserver(m=>{if(m.some(x=>x.type==='childList'||x.type==='characterData'))window.__pickupChanges++}); window.__pickupObserver.observe(e,{subtree:true,childList:true,characterData:true});}")
@@ -40,6 +51,8 @@ def read_search(page, zipcode):
     if box.input_value() != zipcode: raise ValueError('Search location did not remain selected')
     options=dialog.get_by_role('radio').evaluate_all("els=>els.map(e=>({text:e.getAttribute('aria-label')||e.labels?.[0]?.innerText||'',enabled:!e.disabled&&e.getAttribute('aria-disabled')!=='true'}))")
     state,stores=classify(text,options)
+    if state == 'available' and not validate_area(stores, zipcode):
+        raise ValueError('Store addresses do not match the requested search area; stale location results rejected')
     return state,stores,text[:6000]
 
 def dismiss_cookie_notice(page):
