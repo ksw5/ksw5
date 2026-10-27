@@ -39,6 +39,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python .github/tmobile-duo/check.py --output data/tmobile-stock.json
+      - name: Check Python syntax
+        run: python -m compileall -q .github/tmobile-duo
       - name: Install pickup browser
         run: |
           python -m pip install playwright==1.58.0
