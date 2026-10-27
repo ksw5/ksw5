@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T01:31:03.447479+00:00",
+  "checked_at": "2026-10-27T01:58:46.931146+00:00",
   "source": "pickup_selector",
   "results": [
     {
@@ -11,10 +11,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:26:42.493701+00:00",
+      "checked_at": "2026-10-27T01:56:34.474828+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    13 \u00d7 waiting for element to be visible, enable"
     },
     {
       "color": "Star White",
@@ -25,10 +25,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:26:42.493781+00:00",
+      "checked_at": "2026-10-27T01:56:34.474896+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    13 \u00d7 waiting for element to be visible, enable"
     },
     {
       "color": "Star White",
@@ -39,10 +39,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:27:20.360421+00:00",
+      "checked_at": "2026-10-27T01:56:53.562768+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.check: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    28 \u00d7 waiting for element to be visible, enable"
     },
     {
       "color": "Star White",
@@ -53,10 +53,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:27:20.360462+00:00",
+      "checked_at": "2026-10-27T01:56:53.562832+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.check: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    28 \u00d7 waiting for element to be visible, enable"
     },
     {
       "color": "Star White",
@@ -67,10 +67,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:27:57.318563+00:00",
+      "checked_at": "2026-10-27T01:57:12.606614+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.check: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    29 \u00d7 waiting for element to be visible, enable"
     },
     {
       "color": "Star White",
@@ -81,10 +81,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:27:57.318632+00:00",
+      "checked_at": "2026-10-27T01:57:12.606670+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.check: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    29 \u00d7 waiting for element to be visible, enable"
     },
     {
       "color": "Star White",
@@ -95,10 +95,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:28:34.427043+00:00",
+      "checked_at": "2026-10-27T01:57:31.475746+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.check: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    29 \u00d7 waiting for element to be visible, enable"
     },
     {
       "color": "Star White",
@@ -109,10 +109,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:28:34.427108+00:00",
+      "checked_at": "2026-10-27T01:57:31.475805+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.check: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    29 \u00d7 waiting for element to be visible, enable"
     },
     {
       "color": "Night Sky",
@@ -123,10 +123,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:29:12.301647+00:00",
+      "checked_at": "2026-10-27T01:57:50.326927+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-1\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    29 \u00d7 waiting for element to be visible, enabled and stab"
     },
     {
       "color": "Night Sky",
@@ -137,10 +137,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:29:12.301695+00:00",
+      "checked_at": "2026-10-27T01:57:50.326987+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-1\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    29 \u00d7 waiting for element to be visible, enabled and stab"
     },
     {
       "color": "Night Sky",
@@ -151,10 +151,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:29:49.285279+00:00",
+      "checked_at": "2026-10-27T01:58:09.083981+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.check: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-1\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    28 \u00d7 waiting for element to be visible, enabled and stab"
     },
     {
       "color": "Night Sky",
@@ -165,10 +165,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:29:49.285332+00:00",
+      "checked_at": "2026-10-27T01:58:09.084035+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.check: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-1\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    28 \u00d7 waiting for element to be visible, enabled and stab"
     },
     {
       "color": "Night Sky",
@@ -179,10 +179,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:30:26.384652+00:00",
+      "checked_at": "2026-10-27T01:58:27.993752+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.check: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-1\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    29 \u00d7 waiting for element to be visible, enabled and stab"
     },
     {
       "color": "Night Sky",
@@ -193,10 +193,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:30:26.384699+00:00",
+      "checked_at": "2026-10-27T01:58:27.993803+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.check: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-1\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    29 \u00d7 waiting for element to be visible, enabled and stab"
     },
     {
       "color": "Night Sky",
@@ -207,10 +207,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:31:03.379335+00:00",
+      "checked_at": "2026-10-27T01:58:46.862259+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.check: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-1\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    29 \u00d7 waiting for element to be visible, enabled and stab"
     },
     {
       "color": "Night Sky",
@@ -221,10 +221,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-27T01:31:03.379386+00:00",
+      "checked_at": "2026-10-27T01:58:46.862364+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.check: Timeout 18000ms exceeded.\n"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-1\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <div class=\"onetrust-pc-dark-filter ot-fade-in\"></div> from <div data-nosnippet=\"true\" id=\"onetrust-consent-sdk\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    29 \u00d7 waiting for element to be visible, enabled and stab"
     }
   ]
 }
