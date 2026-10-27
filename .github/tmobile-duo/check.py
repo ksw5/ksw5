@@ -25,6 +25,16 @@ MAX_STATUS_AGE_DAYS = 7
 # Specific T-Mobile public store pages independently located using T-Mobile's listings.
 # A sample of stores around ZIP 27889, NOT complete 200-mile coverage.
 SLUGS = (
+    ("Charlotte", "t-mobile-charlotte-nc-28262-9342"),
+    ("Charlotte", "t-mobile-charlotte-nc-28273-198d"),
+    ("Charlotte", "t-mobile-charlotte-nc-28213-2062"),
+    ("Charlotte", "t-mobile-charlotte-nc-28209-145"),
+    ("Charlotte", "t-mobile-charlotte-nc-28227-2286"),
+    ("Charlotte", "t-mobile-charlotte-nc-28216-2rsb"),
+    ("Charlotte", "t-mobile-charlotte-nc-28226-2911"),
+    ("Charlotte", "t-mobile-charlotte-nc-28277-9352"),
+    ("Concord", "t-mobile-concord-nc-28027-4382"),
+    ("Concord", "t-mobile-concord-nc-28027-4021"),
     ("Washington", "t-mobile-washington-nc-27889-404f"),
     ("Greenville", "t-mobile-greenville-nc-27858-9422"),
     ("Williamston", "t-mobile-williamston-nc-27892-1u42"),
@@ -181,7 +191,7 @@ def main():
     if args.output:
         target=Path(args.output)
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(json.dumps({"checked_at": datetime.now(TZ).isoformat(), "zip": ZIP, "product": "iPhone Duo", "stores": [{"id": slug, "state": row[0], "details": row[1], "city": row[2], "name": row[3], "url": row[4], "pickup_confirmed": False} for slug,row in known.items()]}, indent=2) + "\n")
+        target.write_text(json.dumps({"checked_at": datetime.now(TZ).isoformat(), "zip": ZIP, "product": "iPhone Duo", "stores": [{"id": slug, "state": row[0], "details": row[1], "city": row[2], "name": row[3], "url": row[4], "region": "Charlotte area" if row[2] in ("Charlotte", "Concord") else "Eastern NC", "pickup_confirmed": False} for slug,row in known.items()]}, indent=2) + "\n")
     print(f"Checked {len(SLUGS)} candidate T-Mobile stores near ZIP {ZIP}; "
           f"available={sum(x[0]=='available' for x in known.values())}, "
           f"unknown={sum(x[0]=='unknown' for x in known.values())}")
