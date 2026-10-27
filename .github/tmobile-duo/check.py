@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 """Check T-Mobile's public store-level iPhone Duo stock flag, not checkout pickup inventory.
 
-Only a product-specific page with an explicit "In stock" and "confirmed available
-for purchase" is alertable. Exact SKU and pickup eligibility CANNOT be determined
-from this page; alert titles and bodies say so. Read-only by default in --dry-run.
+The public In stock label does NOT confirm pickup at checkout; NEVER send
+pickup notifications based on this model-level field. Read-only in --dry-run.
 """
 import argparse
 import re
 import os
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 import requests
