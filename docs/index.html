@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101521">
+<meta name="description" content="iPhone Duo pickup signals in stores near Washington, NC 27889.">
+<title>DUO / Stock Radar</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="site">
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Duo Stock Radar home"><span class="brand-mark"><span></span></span><span class="brand-text">duo<span class="brand-dot">.</span><small>RADAR</small></span></a>
+    <div class="topbar-right"><span class="city"><span class="loc-icon">⌖</span> Washington, NC <b>27889</b></span><span class="live"><i></i> Automated monitoring</span></div>
+  </header>
+  <section class="hero">
+    <div class="hero-copy"><span class="kicker"><span class="line"></span> SMART STOCK TRACKING</span><h1>Your next iPhone.<br><em>Closer than you think.</em></h1><p>All your nearby pickup signals in one place. No guesswork, no phantom inventory, no refreshing ten tabs.</p>
+      <div class="hero-actions"><button id="refresh" class="primary"><span class="refresh-icon">↻</span> Refresh availability</button><span id="refresh-info" class="time-note" aria-live="polite">Connecting to monitors…</span></div>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="radar-ring ring-1"></div><div class="radar-ring ring-2"></div><div class="radar-ring ring-3"></div><div class="radar-core"><div class="phone"><div class="camera"><span></span><span></span></div><span class="phone-mark"></span></div></div><span class="radar-ping ping-a"></span><span class="radar-ping ping-b"></span><div class="radar-label"><span class="tiny-circle"></span> SEARCHING NEAR YOU</div></div>
+  </section>
+  <section class="stats" aria-label="Inventory summary">
+    <div class="stat primary-stat"><div class="stat-label">Pickup signals <span class="spark green"></span></div><div class="stat-value" id="metric-pickup">—</div><div class="stat-foot">Apple Store checker only</div></div>
+    <div class="stat"><div class="stat-label">T-Mobile listing signals <span class="spark gold"></span></div><div class="stat-value" id="metric-tmobile">—</div><div class="stat-foot">Not verified at checkout</div></div>
+    <div class="stat"><div class="stat-label">Store pages tracked <span class="spark blue"></span></div><div class="stat-value" id="metric-stores">—</div><div class="stat-foot">Across both retailers</div></div>
+    <div class="stat"><div class="stat-label">Last successful sync <span class="spark muted"></span></div><div class="stat-value stat-time" id="metric-time">—</div><div class="stat-foot" id="metric-time-sub">GitHub Actions</div></div>
+  </section>
+  <section class="inventory" aria-labelledby="store-title">
+    <div class="section-top"><div><span class="eyebrow">THE LIVE WATCHLIST</span><h2 id="store-title">Nearby stores <span class="result-count" id="result-count">—</span></h2><p class="section-sub">A clear view of what's reported, what's uncertain, and where to check.</p></div><div class="coverage"><span class="coverage-icon">◉</span><span>Watching stores near<br><b>ZIP 27889</b></span></div></div>
+    <div class="filter-bar">
+      <div class="segments" role="group" aria-label="Retailer">
+        <button data-source="all" class="seg active" aria-pressed="true">All stores</button>
+        <button data-source="apple" class="seg" aria-pressed="false">Apple Store</button>
+        <button data-source="tmobile" class="seg" aria-pressed="false">T-Mobile</button>
+      </div>
+      <div class="controls">
+        <label class="search-wrap"><svg viewBox="0 0 24 24" fill="none" width="16" height="16" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><input id="search" type="search" placeholder="Search city or store…" aria-label="Search city or store"></label>
+        <select id="signal" aria-label="Filter by availability"><option value="all">All statuses</option><option value="pickup">Pickup reported</option><option value="listing">Listing says in stock</option><option value="other">Other / unknown</option></select>
+      </div>
+    </div>
+    <div class="data-bar"><span class="data-dot"></span><span id="data-message">Loading GitHub monitor data…</span><span class="data-right" id="data-age"></span></div>
+    <div id="cards" class="cards" aria-live="polite"></div>
+    <div id="empty" class="empty" hidden><div class="empty-illustration">◎</div><h3>No stores match this view</h3><p>Try another retailer, status filter, or city.</p><button id="clear" class="subtle-button">Clear filters</button></div>
+  </section>
+  <section class="explainer"><div class="ex-icon">✦</div><div><h3>The difference matters.</h3><p><strong>Pickup reported</strong> means the third-party Apple checker explicitly shows a specific configuration at a store. <strong>T-Mobile listing says “In stock”</strong> only refers to its product page—not the actual pickup option at checkout. We deliberately do not send pickup alerts for those listings.</p></div></section>
+  <footer><span>DUO / STOCK RADAR <span class="footer-dot">•</span> Built for ZIP 27889</span><div><a href="https://duo-checker.on-forge.com/" target="_blank" rel="noopener noreferrer">Apple source</a><a href="https://github.com/ksw5/ksw5/actions" target="_blank" rel="noopener noreferrer">Monitor activity</a></div></footer>
+</div>
+<script src="./app.js" defer></script>
+</body>
+</html>
