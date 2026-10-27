@@ -11,9 +11,9 @@ on:
       - '.github/workflows/tmobile-duo-stock.yml'
   workflow_dispatch:
   schedule:
-    - cron: '12,32,52 * * * *'
+    - cron: '*/5 * * * *'
 permissions:
-  contents: read
+  contents: write
   issues: write
 concurrency:
   group: tmobile-duo-monitor
@@ -38,4 +38,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-        run: python .github/tmobile-duo/check.py
+        run: python .github/tmobile-duo/check.py --output data/tmobile-stock.json
+      - name: Publish dashboard observations
+        if: always() && github.event_name != 'pull_request'
+        run: |
+          if [ -f data/tmobile-stock.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/tmobile-stock.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Update T-Mobile stock observations"
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
