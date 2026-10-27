@@ -2,7 +2,6 @@
 import json, os, re, time
 from pathlib import Path
 from datetime import datetime, timezone
-from playwright.sync_api import sync_playwright
 
 URL = 'https://www.t-mobile.com/cell-phone/apple-iphone-duo'
 AREAS = [('Eastern NC','Washington','27889'), ('Charlotte area','Charlotte','28202')]
@@ -42,6 +41,7 @@ def read_search(page, zipcode):
     return state,stores,text[:6000]
 
 def collect():
+    from playwright.sync_api import sync_playwright
     results=[]
     with sync_playwright() as p:
         browser=p.chromium.launch(headless=True)
