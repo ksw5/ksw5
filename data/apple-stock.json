@@ -1,0 +1,510 @@
+{
+  "checked_at": "2026-10-27T01:37:24.816717+00:00",
+  "source": "https://duo-checker.on-forge.com/",
+  "stores": [
+    {
+      "name": "Crabtree Valley Mall",
+      "address": "4325 Glenwood Avenue, Raleigh, NC 27612",
+      "region": "Eastern NC & Virginia",
+      "url": "https://www.apple.com/retail/crabtreevalleymall/",
+      "configurations": [
+        {
+          "store": "Crabtree Valley Mall",
+          "city": "Raleigh",
+          "color": "Night Sky",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R116"
+        },
+        {
+          "store": "Crabtree Valley Mall",
+          "city": "Raleigh",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R116"
+        },
+        {
+          "store": "Crabtree Valley Mall",
+          "city": "Raleigh",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R116"
+        },
+        {
+          "store": "Crabtree Valley Mall",
+          "city": "Raleigh",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R116"
+        },
+        {
+          "store": "Crabtree Valley Mall",
+          "city": "Raleigh",
+          "color": "Star White",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R116"
+        },
+        {
+          "store": "Crabtree Valley Mall",
+          "city": "Raleigh",
+          "color": "Star White",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R116"
+        },
+        {
+          "store": "Crabtree Valley Mall",
+          "city": "Raleigh",
+          "color": "Star White",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R116"
+        },
+        {
+          "store": "Crabtree Valley Mall",
+          "city": "Raleigh",
+          "color": "Star White",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R116"
+        }
+      ]
+    },
+    {
+      "name": "Southpoint",
+      "address": "8030 Renaissance Parkway, Durham, NC 27713",
+      "region": "Eastern NC & Virginia",
+      "url": "https://www.apple.com/retail/southpoint/",
+      "configurations": [
+        {
+          "store": "Southpoint",
+          "city": "Durham",
+          "color": "Night Sky",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R049"
+        },
+        {
+          "store": "Southpoint",
+          "city": "Durham",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R049"
+        },
+        {
+          "store": "Southpoint",
+          "city": "Durham",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R049"
+        },
+        {
+          "store": "Southpoint",
+          "city": "Durham",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R049"
+        },
+        {
+          "store": "Southpoint",
+          "city": "Durham",
+          "color": "Star White",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R049"
+        },
+        {
+          "store": "Southpoint",
+          "city": "Durham",
+          "color": "Star White",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R049"
+        },
+        {
+          "store": "Southpoint",
+          "city": "Durham",
+          "color": "Star White",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R049"
+        },
+        {
+          "store": "Southpoint",
+          "city": "Durham",
+          "color": "Star White",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R049"
+        }
+      ]
+    },
+    {
+      "name": "Friendly Center",
+      "address": "3320 West Friendly Avenue, Greensboro, NC 27410",
+      "region": "Eastern NC & Virginia",
+      "url": "https://www.apple.com/retail/friendlycenter/",
+      "configurations": [
+        {
+          "store": "Friendly Center",
+          "city": "Greensboro",
+          "color": "Night Sky",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R293"
+        },
+        {
+          "store": "Friendly Center",
+          "city": "Greensboro",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R293"
+        },
+        {
+          "store": "Friendly Center",
+          "city": "Greensboro",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R293"
+        },
+        {
+          "store": "Friendly Center",
+          "city": "Greensboro",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R293"
+        },
+        {
+          "store": "Friendly Center",
+          "city": "Greensboro",
+          "color": "Star White",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R293"
+        },
+        {
+          "store": "Friendly Center",
+          "city": "Greensboro",
+          "color": "Star White",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R293"
+        },
+        {
+          "store": "Friendly Center",
+          "city": "Greensboro",
+          "color": "Star White",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R293"
+        },
+        {
+          "store": "Friendly Center",
+          "city": "Greensboro",
+          "color": "Star White",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R293"
+        }
+      ]
+    },
+    {
+      "name": "Lynnhaven Mall",
+      "address": "701 Lynnhaven Parkway, Virginia Beach, VA 23452",
+      "region": "Eastern NC & Virginia",
+      "url": "https://www.apple.com/retail/lynnhavenmall/",
+      "configurations": [
+        {
+          "store": "Lynnhaven Mall",
+          "city": "Virginia Beach",
+          "color": "Night Sky",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R614"
+        },
+        {
+          "store": "Lynnhaven Mall",
+          "city": "Virginia Beach",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R614"
+        },
+        {
+          "store": "Lynnhaven Mall",
+          "city": "Virginia Beach",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R614"
+        },
+        {
+          "store": "Lynnhaven Mall",
+          "city": "Virginia Beach",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R614"
+        },
+        {
+          "store": "Lynnhaven Mall",
+          "city": "Virginia Beach",
+          "color": "Star White",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R614"
+        },
+        {
+          "store": "Lynnhaven Mall",
+          "city": "Virginia Beach",
+          "color": "Star White",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R614"
+        },
+        {
+          "store": "Lynnhaven Mall",
+          "city": "Virginia Beach",
+          "color": "Star White",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R614"
+        },
+        {
+          "store": "Lynnhaven Mall",
+          "city": "Virginia Beach",
+          "color": "Star White",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R614"
+        }
+      ]
+    },
+    {
+      "name": "Short Pump Town Center",
+      "address": "11800 W. Broad Street, Richmond, VA 23233",
+      "region": "Eastern NC & Virginia",
+      "url": "https://www.apple.com/retail/shortpumptowncenter/",
+      "configurations": [
+        {
+          "store": "Short Pump Town Center",
+          "city": "Richmond",
+          "color": "Night Sky",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R078"
+        },
+        {
+          "store": "Short Pump Town Center",
+          "city": "Richmond",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R078"
+        },
+        {
+          "store": "Short Pump Town Center",
+          "city": "Richmond",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R078"
+        },
+        {
+          "store": "Short Pump Town Center",
+          "city": "Richmond",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R078"
+        },
+        {
+          "store": "Short Pump Town Center",
+          "city": "Richmond",
+          "color": "Star White",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R078"
+        },
+        {
+          "store": "Short Pump Town Center",
+          "city": "Richmond",
+          "color": "Star White",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R078"
+        },
+        {
+          "store": "Short Pump Town Center",
+          "city": "Richmond",
+          "color": "Star White",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R078"
+        },
+        {
+          "store": "Short Pump Town Center",
+          "city": "Richmond",
+          "color": "Star White",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R078"
+        }
+      ]
+    },
+    {
+      "name": "SouthPark",
+      "address": "4400 Sharon Road, Charlotte, NC 28211",
+      "region": "Charlotte area",
+      "url": "https://www.apple.com/retail/southpark/",
+      "configurations": [
+        {
+          "store": "SouthPark",
+          "city": "Charlotte",
+          "color": "Night Sky",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R083"
+        },
+        {
+          "store": "SouthPark",
+          "city": "Charlotte",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R083"
+        },
+        {
+          "store": "SouthPark",
+          "city": "Charlotte",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R083"
+        },
+        {
+          "store": "SouthPark",
+          "city": "Charlotte",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R083"
+        },
+        {
+          "store": "SouthPark",
+          "city": "Charlotte",
+          "color": "Star White",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R083"
+        },
+        {
+          "store": "SouthPark",
+          "city": "Charlotte",
+          "color": "Star White",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R083"
+        },
+        {
+          "store": "SouthPark",
+          "city": "Charlotte",
+          "color": "Star White",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R083"
+        },
+        {
+          "store": "SouthPark",
+          "city": "Charlotte",
+          "color": "Star White",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R083"
+        }
+      ]
+    },
+    {
+      "name": "Birkdale Village",
+      "address": "8805 Townley Rd, Huntersville, NC 28078",
+      "region": "Charlotte area",
+      "url": "https://www.apple.com/retail/birkdalevillage/",
+      "configurations": [
+        {
+          "store": "Birkdale Village",
+          "city": "Huntersville",
+          "color": "Night Sky",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R796"
+        },
+        {
+          "store": "Birkdale Village",
+          "city": "Huntersville",
+          "color": "Night Sky",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R796"
+        },
+        {
+          "store": "Birkdale Village",
+          "city": "Huntersville",
+          "color": "Night Sky",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R796"
+        },
+        {
+          "store": "Birkdale Village",
+          "city": "Huntersville",
+          "color": "Night Sky",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R796"
+        },
+        {
+          "store": "Birkdale Village",
+          "city": "Huntersville",
+          "color": "Star White",
+          "storage": "256GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R796"
+        },
+        {
+          "store": "Birkdale Village",
+          "city": "Huntersville",
+          "color": "Star White",
+          "storage": "512GB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R796"
+        },
+        {
+          "store": "Birkdale Village",
+          "city": "Huntersville",
+          "color": "Star White",
+          "storage": "1TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R796"
+        },
+        {
+          "store": "Birkdale Village",
+          "city": "Huntersville",
+          "color": "Star White",
+          "storage": "2TB",
+          "state": "unavailable",
+          "url": "https://duo-checker.on-forge.com/stores/R796"
+        }
+      ]
+    }
+  ]
+}
