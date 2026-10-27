@@ -19,7 +19,7 @@ def now(): return datetime.now(timezone.utc).isoformat()
 
 def settle(page):
     page.wait_for_timeout(1500)
-    try: page.wait_for_load_state('networkidle',timeout=15000)
+    try: page.wait_for_load_state('networkidle',timeout=4000)
     except Exception: pass
 
 def read_search(page, zipcode):
@@ -61,15 +61,15 @@ def collect():
                         choice=page.get_by_role('radiogroup',name='Storage and payments').get_by_role('radio',name=re.compile('^'+re.escape(size)+r'\b'))
                         if not choice.is_checked():
                             if not choice.is_enabled(): raise ValueError('Storage option disabled; pickup not checked for this configuration')
-                            choice.check();settle(page)
+                            page.locator("label[for=\""+choice.get_attribute("id")+"\"]").click();settle(page)
                         alt=page.get_by_role('img',name=re.compile(r'^Apple iPhone Duo - '+re.escape(color)+' - '+re.escape(size))).first.get_attribute('alt')
                         if not alt: raise ValueError('Selected configuration could not be verified')
-                        page.get_by_role('radio',name=re.compile('^Pick up in store')).click()
+                        page.locator('label[data-radiofieldid="BOPIS"]').click()
                         page.get_by_text('Your store:',exact=True).locator('..').get_by_role('button').click()
                     except Exception as ex:
                         body=page.locator('body').inner_text()[:3000]
                         if re.search(r'verify you are human|automated traffic|access denied|checking your browser',body,re.I): blocked=True
-                        error=('Site blocked automated access' if blocked else str(ex).split('Call log:')[0][:350])
+                        error=('Site blocked automated access' if blocked else str(ex)[:1500])
                 else: error='Site blocked automated access; no further requests attempted'
                 for region,city,zipcode in AREAS:
                     row={**base,'region':region,'city':city,'zip':zipcode,'radius_miles':20,'checked_at':now(),'state':'unknown','stores':[]}
