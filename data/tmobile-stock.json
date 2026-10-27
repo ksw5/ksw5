@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T08:32:00.851682-04:00",
+  "checked_at": "2026-10-27T14:14:52.103305-04:00",
   "zip": "27889",
   "product": "iPhone Duo",
   "stores": [
@@ -126,10 +126,10 @@
     },
     {
       "id": "t-mobile-greenville-nc-27858-9422",
-      "state": "available",
-      "details": "T-Mobile says In stock; last updated Oct 23 (4 days ago).",
+      "state": "unavailable",
+      "details": "T-Mobile says High demand. Item may sell out quickly. Visit a store for best availability. Shipping options available.",
       "city": "Greenville",
-      "name": "Arlington Plaza",
+      "name": "T-Mobile Arlington Plaza",
       "address": "600-C SE Greenville Blvd, Greenville, NC, 27858",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-greenville-nc-27858-9422/apple-iphone-duo",
       "region": "Eastern NC",
@@ -280,10 +280,10 @@
     },
     {
       "id": "t-mobile-fayetteville-nc-28314-9356",
-      "state": "available",
-      "details": "T-Mobile says In stock; last updated Oct 23 (4 days ago).",
+      "state": "unavailable",
+      "details": "T-Mobile says High demand. Item may sell out quickly. Visit a store for best availability. Shipping options available.",
       "city": "Fayetteville",
-      "name": "Skibo Rd & Chason Ridge Dr",
+      "name": "T-Mobile Skibo Rd &amp; Chason Ridge Dr",
       "address": "2050 Skibo Rd, Fayetteville, NC, 28314",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-fayetteville-nc-28314-9356/apple-iphone-duo",
       "region": "Eastern NC",
