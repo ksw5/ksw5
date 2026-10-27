@@ -1,6 +1,6 @@
 # T-Mobile iPhone Duo regional stock monitor
 
-A **separate** GitHub Actions workflow checks public T-Mobile per-store **iPhone Duo** product pages about every 20 minutes at minute 12, 32 and 52. It opens and assigns a GitHub Issue when a monitored store page explicitly changes to or first reports **In stock**. It closes that issue when a subsequently readable product page clearly reports no confirmed stock.
+A **separate** GitHub Actions workflow checks public T-Mobile per-store **iPhone Duo** product pages on a five-minute schedule (GitHub may delay or skip scheduled runs). It opens and assigns a GitHub Issue when a monitored store page explicitly changes to or first reports **In stock**. It closes that issue when a subsequently readable product page clearly reports no confirmed stock.
 
 ## Limitations
 - The store page only reports a **model-level** label. **Color, size and online pickup eligibility are not confirmed**. Verify your intended configuration at T-Mobile checkout or phone the store before traveling. The status may have been updated a few days ago; alerts include the page's date.
@@ -15,3 +15,9 @@ GitHub creates separate **T-Mobile** Issues tagged `tmobile-iphone-duo-stock`. E
 
 ## Validation
 The read-only diagnostic fetched six public store pages using a GitHub Actions runner on October 26, 2026. Arlington Plaza (Greenville NC) and a remote New York control reported "In stock" (last updated Oct 23); Williamston and Durham reported "High demand"; Washington and New Bern product links redirected to the general store page. In the full integration test at 8:46 PM EDT on October 26, the **16 candidate pages** produced 2 in-stock pages (Greenville Arlington Plaza and Fayetteville Skibo Rd), 4 high-demand pages, and 10 redirects to general store homepages. Only six had directly verifiable stock flags, so current monitoring coverage is narrower than the 16 locations. This distinction is explicitly handled by the parser. Eight unit tests and read-only integration checks run on PR changes before notifications are activated.
+
+## Dashboard
+
+[Open T-Mobile Stock Watch](https://kieran-tmobile-stock-watch.silkyloach13.chatgpt.site) (owner-private).
+
+Each completed check exports `data/tmobile-stock.json` to main. The dashboard fetches this snapshot every 60 seconds, offers city search and stock filters, and flags observations older than 15 minutes. Refresh reads the latest published results; it does not force a new T-Mobile check. Store stock is not confirmed checkout pickup.
