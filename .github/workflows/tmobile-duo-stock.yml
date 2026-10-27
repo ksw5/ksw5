@@ -46,6 +46,9 @@ jobs:
       - name: Test pickup classification
         run: python -m unittest discover -s .github/tmobile-duo -p 'test_pickup.py' -v
       - name: Read exact-configuration pickup selector
+        env:
+          GITHUB_TOKEN: ${{ github.event_name != 'pull_request' && secrets.GITHUB_TOKEN || '' }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: python .github/tmobile-duo/pickup.py
       - name: Publish dashboard observations
         if: always() && github.event_name != 'pull_request'
