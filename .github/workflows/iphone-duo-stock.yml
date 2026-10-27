@@ -7,10 +7,10 @@ on:
       - '.github/iphone-duo/**'
       - '.github/workflows/iphone-duo-stock.yml'
   schedule:
-    - cron: '7,27,47 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   issues: write
 concurrency:
   group: iphone-duo-monitor
@@ -35,4 +35,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-        run: python .github/iphone-duo/check.py
+        run: python .github/iphone-duo/check.py --output data/apple-stock.json
+
+      - name: Publish Apple dashboard snapshot
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/apple-stock.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Apple stock snapshot"
+            git pull --rebase origin main
+            git push
+          fi
