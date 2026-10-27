@@ -1,0 +1,44 @@
+name: Stock alert delivery test
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/stock-alert-delivery-test.yml']
+permissions:
+  issues: write
+concurrency:
+  group: stock-alert-delivery-test
+  cancel-in-progress: false
+jobs:
+  notify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    steps:
+      - name: Send a single assigned test alert
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          repo = os.environ['REPOSITORY']
+          owner = repo.split('/')[0]
+          marker = '<!-- stock-alert-delivery-test-2026-10-27 -->'
+          base = 'https://api.github.com/repos/' + repo
+          headers = {'Authorization': 'Bearer ' + os.environ['GITHUB_TOKEN'], 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28'}
+          def api(path, data=None):
+              request = urllib.request.Request(base + path, headers=headers, data=None if data is None else json.dumps(data).encode())
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  return json.load(response)
+          existing = api('/issues?state=all&per_page=100')
+          matches = [i for i in existing if marker in (i.get('body') or '')]
+          if matches:
+              print('Test already sent: ' + matches[0]['html_url'])
+          else:
+              issue = api('/issues', {
+                  'title': 'TEST ONLY: iPhone stock alert — phone and email delivery check',
+                  'body': marker + '\n\nThis is the test notification you requested. It is NOT a new stock detection.\n\nThis issue was created by GitHub Actions and assigned to you, using the same delivery route as the stock monitors. Check for a GitHub Mobile push and a GitHub email. Delivery depends on your notification settings.\n\nNo purchase or reservation has been made.',
+                  'assignees': [owner]
+              })
+              print('Test alert created: ' + issue['html_url'])
+          PY
