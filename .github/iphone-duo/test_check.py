@@ -31,7 +31,7 @@ class TestInventory(unittest.TestCase):
     def test_unavailable_is_not_available(self):
         found, count = checker.parse_inventory(fixture())
         self.assertEqual(found, [])
-        self.assertEqual(count, 205)
+        self.assertEqual(count, 200 + len(checker.NEARBY_STORES))
     def test_one_positive_store_sku(self):
         found, _ = checker.parse_inventory(fixture({("Southpoint", "night-sky", "512")}))
         self.assertEqual(len(found), 1)
@@ -53,3 +53,4 @@ class TestInventory(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
