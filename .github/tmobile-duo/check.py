@@ -159,6 +159,31 @@ def update_issues(known):
             "labels":[LABEL],"assignees":[owner]})
         print(f"NEW T-MOBILE ALERT: {issue['html_url']}")
 
+
+STORE_META = {}
+def store_metadata(html):
+    soup=BeautifulSoup(html, "html.parser")
+    def visit(obj):
+        if isinstance(obj, list):
+            for v in obj:
+                found=visit(v)
+                if found: return found
+        if isinstance(obj, dict):
+            address=obj.get("address")
+            if isinstance(address, dict) and address.get("streetAddress"):
+                return {"name": obj.get("name",""), "address": ", ".join(str(address.get(k,"")) for k in ("streetAddress","addressLocality","addressRegion","postalCode") if address.get(k))}
+            for v in obj.values():
+                if isinstance(v,(dict,list)):
+                    found=visit(v)
+                    if found: return found
+        return None
+    for script in soup.select('script[type="application/ld+json"]'):
+        try:
+            found=visit(json.loads(script.string or script.get_text()))
+            if found: return found
+        except (ValueError,TypeError): pass
+    return {}
+
 def collect():
     known={}
     for i,(city,slug) in enumerate(SLUGS):
@@ -167,12 +192,13 @@ def collect():
         try:
             resp=HTTP.get(url,timeout=18)
             resp.raise_for_status()
+            STORE_META[slug]=store_metadata(resp.text)
             state,details=parse(resp.text,resp.url,url)
             if state=="unknown":
                 print(f"UNKNOWN {city} {slug}: {details}")
             else:
                 print(f"{state.upper()} {city} {slug}: {details}")
-            name=slug
+            name=STORE_META.get(slug,{}).get("name") or slug
             if state=="available":
                 h1=BeautifulSoup(resp.text,"html.parser").find("h1")
                 if h1: name=re.sub(r"^iPhone\s+Duo\s+at\s+T-Mobile\s*","",h1.get_text(" ",strip=True),flags=re.I)
@@ -191,7 +217,7 @@ def main():
     if args.output:
         target=Path(args.output)
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(json.dumps({"checked_at": datetime.now(TZ).isoformat(), "zip": ZIP, "product": "iPhone Duo", "stores": [{"id": slug, "state": row[0], "details": row[1], "city": row[2], "name": row[3], "url": row[4], "region": "Charlotte area" if row[2] in ("Charlotte", "Concord") else "Eastern NC", "pickup_confirmed": False} for slug,row in known.items()]}, indent=2) + "\n")
+        target.write_text(json.dumps({"checked_at": datetime.now(TZ).isoformat(), "zip": ZIP, "product": "iPhone Duo", "stores": [{"id": slug, "state": row[0], "details": row[1], "city": row[2], "name": row[3], "address": STORE_META.get(slug,{}).get("address",""), "url": row[4], "region": "Charlotte area" if row[2] in ("Charlotte", "Concord") else "Eastern NC", "pickup_confirmed": False} for slug,row in known.items()]}, indent=2) + "\n")
     print(f"Checked {len(SLUGS)} candidate T-Mobile stores near ZIP {ZIP}; "
           f"available={sum(x[0]=='available' for x in known.values())}, "
           f"unknown={sum(x[0]=='unknown' for x in known.values())}")
