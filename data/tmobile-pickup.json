@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-28T19:47:11.338097+00:00",
+  "checked_at": "2026-10-28T23:42:50.875947+00:00",
   "source": "pickup_selector",
   "results": [
     {
@@ -11,10 +11,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:43:28.102154+00:00",
+      "checked_at": "2026-10-28T23:40:10.401465+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scro"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button id=\"tnt269975_BtMdL_Pill_2\" class=\"tnt269975_BtMdL_pill\">\u2026</button> from <div>\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button id=\"tnt269975_BtMdL_Pill_2\" class=\"tnt269975_BtMdL_pill\">\u2026</button> from <div>\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and st"
     },
     {
       "color": "Star White",
@@ -25,10 +25,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:43:28.102227+00:00",
+      "checked_at": "2026-10-28T23:40:10.401550+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scro"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card selected\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button id=\"tnt269975_BtMdL_Pill_2\" class=\"tnt269975_BtMdL_pill\">\u2026</button> from <div>\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button id=\"tnt269975_BtMdL_Pill_2\" class=\"tnt269975_BtMdL_pill\">\u2026</button> from <div>\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and st"
     },
     {
       "color": "Star White",
@@ -39,10 +39,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:44:00.339410+00:00",
-      "state": "unknown",
+      "checked_at": "2026-10-28T23:40:31.062750+00:00",
+      "state": "unavailable",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[for=\\\"skuSelector-3371839395-memory-payMonthly-1\\\"]\")\n    - locator resolved to <label class=\"tdds-styled-radio__container\" for=\"skuSelector-3371839395-memory-payMonthly-1\" :for=\"`skuSelector-3371839395-memory-payMonthly-` + index\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_"
+      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
     },
     {
       "color": "Star White",
@@ -53,10 +53,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:44:00.339461+00:00",
-      "state": "unknown",
+      "checked_at": "2026-10-28T23:40:44.457651+00:00",
+      "state": "unavailable",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[for=\\\"skuSelector-3371839395-memory-payMonthly-1\\\"]\")\n    - locator resolved to <label class=\"tdds-styled-radio__container\" for=\"skuSelector-3371839395-memory-payMonthly-1\" :for=\"`skuSelector-3371839395-memory-payMonthly-` + index\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_"
+      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
     },
     {
       "color": "Star White",
@@ -67,10 +67,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:44:32.889058+00:00",
+      "checked_at": "2026-10-28T23:41:11.635384+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[for=\\\"skuSelector-3371839395-memory-payMonthly-2\\\"]\")\n    - locator resolved to <label class=\"tdds-styled-radio__container\" for=\"skuSelector-3371839395-memory-payMonthly-2\" :for=\"`skuSelector-3371839395-memory-payMonthly-` + index\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    34 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" i"
+      "details": "Storage option disabled; pickup not checked for this configuration"
     },
     {
       "color": "Star White",
@@ -81,10 +81,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:44:32.889110+00:00",
+      "checked_at": "2026-10-28T23:41:11.635438+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[for=\\\"skuSelector-3371839395-memory-payMonthly-2\\\"]\")\n    - locator resolved to <label class=\"tdds-styled-radio__container\" for=\"skuSelector-3371839395-memory-payMonthly-2\" :for=\"`skuSelector-3371839395-memory-payMonthly-` + index\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    34 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" i"
+      "details": "Storage option disabled; pickup not checked for this configuration"
     },
     {
       "color": "Star White",
@@ -95,10 +95,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:45:04.400931+00:00",
+      "checked_at": "2026-10-28T23:41:26.187028+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[for=\\\"skuSelector-3371839395-memory-payMonthly-3\\\"]\")\n    - locator resolved to <label class=\"tdds-styled-radio__container\" for=\"skuSelector-3371839395-memory-payMonthly-3\" :for=\"`skuSelector-3371839395-memory-payMonthly-` + index\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    32 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" i"
+      "details": "Storage option disabled; pickup not checked for this configuration"
     },
     {
       "color": "Star White",
@@ -109,10 +109,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:45:04.400991+00:00",
+      "checked_at": "2026-10-28T23:41:26.187076+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[for=\\\"skuSelector-3371839395-memory-payMonthly-3\\\"]\")\n    - locator resolved to <label class=\"tdds-styled-radio__container\" for=\"skuSelector-3371839395-memory-payMonthly-3\" :for=\"`skuSelector-3371839395-memory-payMonthly-` + index\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    32 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" i"
+      "details": "Storage option disabled; pickup not checked for this configuration"
     },
     {
       "color": "Night Sky",
@@ -123,10 +123,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:45:36.040186+00:00",
-      "state": "unknown",
+      "checked_at": "2026-10-28T23:41:41.286713+00:00",
+      "state": "unavailable",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[data-radiofieldid=\\\"BOPIS\\\"]\")\n    - locator resolved to <label data-radio-label=\"true\" data-radiofieldid=\"BOPIS\" for=\"shipping-options-5c302d081a-BOPIS\" @keydown=\"handleRadioKeydown($event, $el.dataset.radiofieldid);\" data-analytics-one-mind-event-action=\"<p>Pick up in store</p>\u21b5 \" class=\"tdds-styled-radio__container tnt260000_deliveryStack_pdpuxp\" data-analytics-one-mind-attribute-label=\"<p>Pick up in store</p>\u21b5 \" @click=\"(($el.dataset.radiofieldid !== 'BOPIS' && $el.dataset.radiofieldid !== 'SDD' && $el.dataset.disabledradio !== 'true') || ($el.dataset.\u2026>\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enab"
+      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
     },
     {
       "color": "Night Sky",
@@ -137,10 +137,12 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:45:36.040247+00:00",
-      "state": "unknown",
-      "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[data-radiofieldid=\\\"BOPIS\\\"]\")\n    - locator resolved to <label data-radio-label=\"true\" data-radiofieldid=\"BOPIS\" for=\"shipping-options-5c302d081a-BOPIS\" @keydown=\"handleRadioKeydown($event, $el.dataset.radiofieldid);\" data-analytics-one-mind-event-action=\"<p>Pick up in store</p>\u21b5 \" class=\"tdds-styled-radio__container tnt260000_deliveryStack_pdpuxp\" data-analytics-one-mind-attribute-label=\"<p>Pick up in store</p>\u21b5 \" @click=\"(($el.dataset.radiofieldid !== 'BOPIS' && $el.dataset.radiofieldid !== 'SDD' && $el.dataset.disabledradio !== 'true') || ($el.dataset.\u2026>\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enab"
+      "checked_at": "2026-10-28T23:41:53.938833+00:00",
+      "state": "available",
+      "stores": [
+        "The Shoppes at Univ Place (7.9 mi)\n\n8944 Jm Keynes Drive Suite 310, Charlotte, NC, 28262\n\nToday's hours: 10am - 8pm\n\nIn Stock"
+      ],
+      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nSearch results available below.\n\nThe Shoppes at Univ Place (7.9 mi)\n\n8944 Jm Keynes Drive Suite 310, Charlotte, NC, 28262\n\nToday's hours: 10am - 8pm\n\nIn Stock\nPick up here"
     },
     {
       "color": "Night Sky",
@@ -151,10 +153,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:46:07.791957+00:00",
+      "checked_at": "2026-10-28T23:42:22.136676+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[for=\\\"skuSelector-3371839395-memory-payMonthly-1\\\"]\")\n    - locator resolved to <label class=\"tdds-styled-radio__container\" for=\"skuSelector-3371839395-memory-payMonthly-1\" :for=\"`skuSelector-3371839395-memory-payMonthly-` + index\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    34 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" i"
+      "details": "Storage option disabled; pickup not checked for this configuration"
     },
     {
       "color": "Night Sky",
@@ -165,10 +167,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:46:07.792025+00:00",
+      "checked_at": "2026-10-28T23:42:22.136727+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[for=\\\"skuSelector-3371839395-memory-payMonthly-1\\\"]\")\n    - locator resolved to <label class=\"tdds-styled-radio__container\" for=\"skuSelector-3371839395-memory-payMonthly-1\" :for=\"`skuSelector-3371839395-memory-payMonthly-` + index\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    34 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" i"
+      "details": "Storage option disabled; pickup not checked for this configuration"
     },
     {
       "color": "Night Sky",
@@ -179,10 +181,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:46:39.261050+00:00",
+      "checked_at": "2026-10-28T23:42:36.398130+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[for=\\\"skuSelector-3371839395-memory-payMonthly-2\\\"]\")\n    - locator resolved to <label class=\"tdds-styled-radio__container\" for=\"skuSelector-3371839395-memory-payMonthly-2\" :for=\"`skuSelector-3371839395-memory-payMonthly-` + index\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-m"
+      "details": "Storage option disabled; pickup not checked for this configuration"
     },
     {
       "color": "Night Sky",
@@ -193,10 +195,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:46:39.261124+00:00",
+      "checked_at": "2026-10-28T23:42:36.398176+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[for=\\\"skuSelector-3371839395-memory-payMonthly-2\\\"]\")\n    - locator resolved to <label class=\"tdds-styled-radio__container\" for=\"skuSelector-3371839395-memory-payMonthly-2\" :for=\"`skuSelector-3371839395-memory-payMonthly-` + index\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-m"
+      "details": "Storage option disabled; pickup not checked for this configuration"
     },
     {
       "color": "Night Sky",
@@ -207,10 +209,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:47:11.240665+00:00",
+      "checked_at": "2026-10-28T23:42:50.754212+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[for=\\\"skuSelector-3371839395-memory-payMonthly-3\\\"]\")\n    - locator resolved to <label class=\"tdds-styled-radio__container\" for=\"skuSelector-3371839395-memory-payMonthly-3\" :for=\"`skuSelector-3371839395-memory-payMonthly-` + index\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    33 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" i"
+      "details": "Storage option disabled; pickup not checked for this configuration"
     },
     {
       "color": "Night Sky",
@@ -221,10 +223,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T19:47:11.240719+00:00",
+      "checked_at": "2026-10-28T23:42:50.754264+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for locator(\"label[for=\\\"skuSelector-3371839395-memory-payMonthly-3\\\"]\")\n    - locator resolved to <label class=\"tdds-styled-radio__container\" for=\"skuSelector-3371839395-memory-payMonthly-3\" :for=\"`skuSelector-3371839395-memory-payMonthly-` + index\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" id=\"lightbox_pop\" aria-modal=\"true\" class=\"white_content\" allowtransparency=\"true\" title=\"Language Selection\" src=\"https://tmobilees.mpeasylink.com/mpel/mpel_welcome.html?MpElPref.site=www.t-mobile.com&MpElPref.lang=en&MpElPref.country=&MpElPref.region=&MpElPref.currency=&MpElPref.origin=self&MpElPref.allsites=es.t-mobile.com,es.account.t-mobile.com,es.business.t-mobile.com,es.e2.my.t-mobile.com,es.e9.my.t-mobile.com,es.eui1.account.t-mobile.com,es.\u2026></iframe> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    33 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe role=\"dialog\" scrolling=\"no\" frameborder=\"0\" i"
+      "details": "Storage option disabled; pickup not checked for this configuration"
     }
   ]
 }
