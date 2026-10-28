@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-28T07:27:32.971870+00:00",
+  "checked_at": "2026-10-28T14:24:23.551510+00:00",
   "source": "pickup_selector",
   "results": [
     {
@@ -11,10 +11,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:24:58.478656+00:00",
-      "state": "unavailable",
+      "checked_at": "2026-10-28T14:21:48.526031+00:00",
+      "state": "unknown",
       "stores": [],
-      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button id=\"tnt269975_BtMdL_Pill_2\" class=\"tnt269975_BtMdL_pill\">\u2026</button> from <div>\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button id=\"tnt269975_BtMdL_Pill_2\" class=\"tnt269975_BtMdL_pill\">\u2026</button> from <div>\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button id=\"tnt269975_BtMdL_Pill_1\" class=\"tnt269975_BtMdL_pill\">\u2026</button> fro"
     },
     {
       "color": "Star White",
@@ -25,7 +25,21 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:25:12.056126+00:00",
+      "checked_at": "2026-10-28T14:21:48.526088+00:00",
+      "state": "unknown",
+      "stores": [],
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Star White\")\n    - locator resolved to <label class=\"color-swatch-card\" for=\"skuSelector-3371839395-color-0\" :for=\"`skuSelector-3371839395-color-${index}`\" :style=\"`--upf--skuSelector--bg: url('${swatch[item.name]}')`\" :class=\"{'selected': activeSku?.color?.id === item.name,\u21b5                   'color-swatch-card--single': color.length === 1 }\">\u2026</label>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button id=\"tnt269975_BtMdL_Pill_2\" class=\"tnt269975_BtMdL_pill\">\u2026</button> from <div>\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button id=\"tnt269975_BtMdL_Pill_2\" class=\"tnt269975_BtMdL_pill\">\u2026</button> from <div>\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button id=\"tnt269975_BtMdL_Pill_1\" class=\"tnt269975_BtMdL_pill\">\u2026</button> fro"
+    },
+    {
+      "color": "Star White",
+      "storage": "512GB",
+      "source": "pickup_selector",
+      "url": "https://www.t-mobile.com/cell-phone/apple-iphone-duo",
+      "region": "Eastern NC",
+      "city": "Washington",
+      "zip": "27889",
+      "radius_miles": 20,
+      "checked_at": "2026-10-28T14:22:08.206903+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
@@ -35,28 +49,14 @@
       "storage": "512GB",
       "source": "pickup_selector",
       "url": "https://www.t-mobile.com/cell-phone/apple-iphone-duo",
-      "region": "Eastern NC",
-      "city": "Washington",
-      "zip": "27889",
-      "radius_miles": 20,
-      "checked_at": "2026-10-28T07:25:41.077216+00:00",
-      "state": "unknown",
-      "stores": [],
-      "details": "Storage option disabled; pickup not checked for this configuration"
-    },
-    {
-      "color": "Star White",
-      "storage": "512GB",
-      "source": "pickup_selector",
-      "url": "https://www.t-mobile.com/cell-phone/apple-iphone-duo",
       "region": "Charlotte area",
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:25:41.077271+00:00",
-      "state": "unknown",
+      "checked_at": "2026-10-28T14:22:21.837207+00:00",
+      "state": "unavailable",
       "stores": [],
-      "details": "Storage option disabled; pickup not checked for this configuration"
+      "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
     },
     {
       "color": "Star White",
@@ -67,7 +67,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:25:55.334763+00:00",
+      "checked_at": "2026-10-28T14:22:48.690819+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -81,7 +81,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:25:55.334821+00:00",
+      "checked_at": "2026-10-28T14:22:48.690858+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -95,7 +95,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:26:09.894987+00:00",
+      "checked_at": "2026-10-28T14:23:01.863735+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -109,7 +109,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:26:09.895064+00:00",
+      "checked_at": "2026-10-28T14:23:01.863808+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -123,7 +123,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:26:25.017470+00:00",
+      "checked_at": "2026-10-28T14:23:15.918294+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
@@ -137,7 +137,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:26:38.315577+00:00",
+      "checked_at": "2026-10-28T14:23:29.640974+00:00",
       "state": "available",
       "stores": [
         "The Shoppes at Univ Place (7.9 mi)\n\n8944 Jm Keynes Drive Suite 310, Charlotte, NC, 28262\n\nToday's hours: 10am - 8pm\n\nIn Stock"
@@ -153,7 +153,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:27:04.503075+00:00",
+      "checked_at": "2026-10-28T14:23:56.631498+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -167,7 +167,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:27:04.503125+00:00",
+      "checked_at": "2026-10-28T14:23:56.631544+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -181,7 +181,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:27:18.855560+00:00",
+      "checked_at": "2026-10-28T14:24:09.933402+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -195,7 +195,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:27:18.855629+00:00",
+      "checked_at": "2026-10-28T14:24:09.933442+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -209,7 +209,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:27:32.855893+00:00",
+      "checked_at": "2026-10-28T14:24:23.435169+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -223,7 +223,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-10-28T07:27:32.855955+00:00",
+      "checked_at": "2026-10-28T14:24:23.435210+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
