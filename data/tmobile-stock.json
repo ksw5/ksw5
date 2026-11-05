@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-04T22:29:29.382907-05:00",
+  "checked_at": "2026-11-05T06:28:26.015187-05:00",
   "zip": "27889",
   "product": "iPhone Duo",
   "stores": [
@@ -104,10 +104,10 @@
     },
     {
       "id": "t-mobile-concord-nc-28027-4021",
-      "state": "unknown",
-      "details": "Product page redirected; no reliable stock information.",
+      "state": "unavailable",
+      "details": "T-Mobile says High demand. Item may sell out quickly. Visit a store for best availability. Shipping options available.",
       "city": "Concord",
-      "name": "T-Mobile Concord Mills Blvd & Thunder Rd Nw",
+      "name": "T-Mobile Concord Mills Blvd &amp; Thunder Rd Nw",
       "address": "8561 Concord Mills Blvd, Concord, NC, 28027",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-concord-nc-28027-4021/apple-iphone-duo",
       "region": "Charlotte area",
