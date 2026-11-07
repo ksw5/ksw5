@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-11-07T01:20:05.825492-05:00",
+  "checked_at": "2026-11-07T08:23:41.884547-05:00",
   "zip": "27889",
   "product": "iPhone Duo",
   "stores": [
     {
       "id": "t-mobile-charlotte-nc-28262-9342",
       "state": "available",
-      "details": "T-Mobile says In stock; last updated Nov 6 (1 days ago).",
+      "details": "T-Mobile says In stock; last updated Nov 7 (0 days ago).",
       "city": "Charlotte",
       "name": "The Shoppes at Univ Place",
       "address": "8944 Jm Keynes Drive, Charlotte, NC, 28262",
@@ -127,7 +127,7 @@
     {
       "id": "t-mobile-greenville-nc-27858-9422",
       "state": "unavailable",
-      "details": "T-Mobile says High demand. Item may sell out quickly. Visit a store for best availability. Shipping options available.",
+      "details": "T-Mobile says Out of stock. This item is not currently available.",
       "city": "Greenville",
       "name": "T-Mobile Arlington Plaza",
       "address": "600-C SE Greenville Blvd, Greenville, NC, 27858",
