@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-11T13:40:09.656100-05:00",
+  "checked_at": "2026-11-11T20:03:02.777245-05:00",
   "zip": "27889",
   "product": "iPhone Duo",
   "stores": [
@@ -38,10 +38,10 @@
     },
     {
       "id": "t-mobile-charlotte-nc-28209-145",
-      "state": "available",
-      "details": "T-Mobile says In stock; last updated Nov 11 (0 days ago).",
+      "state": "unavailable",
+      "details": "T-Mobile says Out of stock. This item is not currently available.",
       "city": "Charlotte",
-      "name": "South & Woodlawn",
+      "name": "T-Mobile South &amp; Woodlawn",
       "address": "4651 South Blvd, Charlotte, NC, 28209",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-charlotte-nc-28209-145/apple-iphone-duo",
       "region": "Charlotte area",
