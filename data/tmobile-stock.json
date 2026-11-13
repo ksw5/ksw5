@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-11-12T21:56:35.662736-05:00",
+  "checked_at": "2026-11-13T05:49:18.023114-05:00",
   "zip": "27889",
   "product": "iPhone Duo",
   "stores": [
     {
       "id": "t-mobile-charlotte-nc-28262-9342",
-      "state": "available",
-      "details": "T-Mobile says In stock; last updated Nov 12 (0 days ago).",
+      "state": "unavailable",
+      "details": "T-Mobile says Out of stock. This item is not currently available.",
       "city": "Charlotte",
-      "name": "The Shoppes at Univ Place",
+      "name": "T-Mobile The Shoppes at Univ Place",
       "address": "8944 Jm Keynes Drive, Charlotte, NC, 28262",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-charlotte-nc-28262-9342/apple-iphone-duo",
       "region": "Charlotte area",
