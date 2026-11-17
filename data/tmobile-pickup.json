@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-17T00:48:07.588888+00:00",
+  "checked_at": "2026-11-17T08:38:13.888252+00:00",
   "source": "pickup_selector",
   "results": [
     {
@@ -11,7 +11,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:45:49.789500+00:00",
+      "checked_at": "2026-11-17T08:35:18.263944+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
@@ -25,7 +25,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:46:03.049867+00:00",
+      "checked_at": "2026-11-17T08:35:31.730999+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
@@ -39,7 +39,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:46:28.937962+00:00",
+      "checked_at": "2026-11-17T08:35:57.257005+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -53,7 +53,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:46:28.937994+00:00",
+      "checked_at": "2026-11-17T08:35:57.257061+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -67,7 +67,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:46:40.942997+00:00",
+      "checked_at": "2026-11-17T08:36:09.472810+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -81,7 +81,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:46:40.943031+00:00",
+      "checked_at": "2026-11-17T08:36:09.472851+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -95,7 +95,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:46:52.908610+00:00",
+      "checked_at": "2026-11-17T08:36:21.437195+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -109,7 +109,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:46:52.908648+00:00",
+      "checked_at": "2026-11-17T08:36:21.437241+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -123,7 +123,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:47:05.181897+00:00",
+      "checked_at": "2026-11-17T08:36:33.967023+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
@@ -137,7 +137,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:47:18.389814+00:00",
+      "checked_at": "2026-11-17T08:36:47.084690+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
@@ -151,10 +151,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:47:43.540722+00:00",
+      "checked_at": "2026-11-17T08:37:24.821891+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Storage option disabled; pickup not checked for this configuration"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n"
     },
     {
       "color": "Night Sky",
@@ -165,10 +165,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:47:43.540768+00:00",
+      "checked_at": "2026-11-17T08:37:24.821937+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Storage option disabled; pickup not checked for this configuration"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n"
     },
     {
       "color": "Night Sky",
@@ -179,10 +179,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:47:55.623165+00:00",
+      "checked_at": "2026-11-17T08:37:49.343341+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Storage option disabled; pickup not checked for this configuration"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n"
     },
     {
       "color": "Night Sky",
@@ -193,10 +193,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:47:55.623206+00:00",
+      "checked_at": "2026-11-17T08:37:49.343397+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Storage option disabled; pickup not checked for this configuration"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n"
     },
     {
       "color": "Night Sky",
@@ -207,10 +207,10 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:48:07.524414+00:00",
+      "checked_at": "2026-11-17T08:38:13.841135+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Storage option disabled; pickup not checked for this configuration"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n"
     },
     {
       "color": "Night Sky",
@@ -221,10 +221,10 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-17T00:48:07.524450+00:00",
+      "checked_at": "2026-11-17T08:38:13.841182+00:00",
       "state": "unknown",
       "stores": [],
-      "details": "Storage option disabled; pickup not checked for this configuration"
+      "details": "Locator.click: Timeout 18000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"group\", name=\"Device colors\", exact=True).locator(\"label.color-swatch-card\").filter(has_text=\"Night Sky\")\n"
     }
   ]
 }
