@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-18T23:28:00.244915+00:00",
+  "checked_at": "2026-11-19T04:28:38.159733+00:00",
   "source": "pickup_selector",
   "results": [
     {
@@ -11,7 +11,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:25:40.989585+00:00",
+      "checked_at": "2026-11-19T04:26:08.787882+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
@@ -25,7 +25,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:25:54.382967+00:00",
+      "checked_at": "2026-11-19T04:26:22.073301+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
@@ -39,7 +39,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:26:19.985642+00:00",
+      "checked_at": "2026-11-19T04:26:50.428527+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -53,7 +53,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:26:19.985682+00:00",
+      "checked_at": "2026-11-19T04:26:50.428572+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -67,7 +67,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:26:32.280915+00:00",
+      "checked_at": "2026-11-19T04:27:03.751531+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -81,7 +81,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:26:32.280965+00:00",
+      "checked_at": "2026-11-19T04:27:03.751578+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -95,7 +95,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:26:44.680677+00:00",
+      "checked_at": "2026-11-19T04:27:16.907813+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -109,7 +109,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:26:44.680714+00:00",
+      "checked_at": "2026-11-19T04:27:16.907856+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -123,7 +123,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:26:57.214936+00:00",
+      "checked_at": "2026-11-19T04:27:30.232919+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
@@ -137,7 +137,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:27:10.569895+00:00",
+      "checked_at": "2026-11-19T04:27:43.724269+00:00",
       "state": "unavailable",
       "stores": [],
       "details": "Select a store\n\nSearch by city and state or ZIP code to check availability at nearby stores.\n\nNo search results available.\n\nThe chosen item isn't available for pickup at stores within 20 miles\n\nTry another city, state or zip code to look for other stores."
@@ -151,7 +151,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:27:36.166874+00:00",
+      "checked_at": "2026-11-19T04:28:10.866659+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -165,7 +165,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:27:36.166910+00:00",
+      "checked_at": "2026-11-19T04:28:10.866704+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -179,7 +179,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:27:48.222197+00:00",
+      "checked_at": "2026-11-19T04:28:24.616419+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -193,7 +193,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:27:48.222230+00:00",
+      "checked_at": "2026-11-19T04:28:24.616462+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -207,7 +207,7 @@
       "city": "Washington",
       "zip": "27889",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:28:00.183532+00:00",
+      "checked_at": "2026-11-19T04:28:37.990047+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
@@ -221,7 +221,7 @@
       "city": "Charlotte",
       "zip": "28202",
       "radius_miles": 20,
-      "checked_at": "2026-11-18T23:28:00.183572+00:00",
+      "checked_at": "2026-11-19T04:28:37.990115+00:00",
       "state": "unknown",
       "stores": [],
       "details": "Storage option disabled; pickup not checked for this configuration"
