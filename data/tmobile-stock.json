@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T17:40:25.284508-05:00",
+  "checked_at": "2026-11-27T23:18:21.854848-05:00",
   "zip": "27889",
   "product": "iPhone Duo",
   "stores": [
@@ -126,10 +126,10 @@
     },
     {
       "id": "t-mobile-greenville-nc-27858-9422",
-      "state": "unavailable",
-      "details": "T-Mobile says Out of stock. This item is not currently available.",
+      "state": "available",
+      "details": "T-Mobile says In stock; last updated Nov 27 (0 days ago).",
       "city": "Greenville",
-      "name": "T-Mobile Arlington Plaza",
+      "name": "Arlington Plaza",
       "address": "600-C SE Greenville Blvd, Greenville, NC, 27858",
       "url": "https://www.t-mobile.com/stores/pd/t-mobile-greenville-nc-27858-9422/apple-iphone-duo",
       "region": "Eastern NC",
